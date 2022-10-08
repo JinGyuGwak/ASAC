@@ -1,0 +1,23 @@
+.main3{
+    padding:60px 0px;
+    border-bottom: 1px black solid;
+    text-align: center;
+    width: 100%;
+    
+}
+#wanted_vod{
+    width: 70%;
+    margin: 0 auto;
+    border-top: 1px solid rgba(128, 128, 128, 0.37);
+    padding-top: 60px;
+}
+.vod_list{
+    padding: 0px;
+    margin:30px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.vod_list li{
+    margin : 10px;
+}
