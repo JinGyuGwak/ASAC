@@ -1,0 +1,32 @@
+.main5{
+    padding:60px 0px;
+    text-align: center;
+    width: 100%;
+}
+.main5_title{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.main5_title div h2{
+    font-size: 30px;
+}
+.main5_title a{
+    margin: 5px 0 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    vertical-align: middle;
+    color: #767676!important;
+}
+.main5_img_list{
+    width: 70%;
+    margin:0 auto;
+}
+.main5_img_list ul{
+    display: flex;
+    padding:0px;
+}
+.main5_img_list ul li{
+    margin: 10px;
+}

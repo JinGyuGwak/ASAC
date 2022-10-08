@@ -1,9 +1,7 @@
 .main3{
     padding:60px 0px;
-    border-bottom: 1px black solid;
     text-align: center;
     width: 100%;
-    
 }
 #wanted_vod{
     width: 70%;
@@ -11,13 +9,40 @@
     border-top: 1px solid rgba(128, 128, 128, 0.37);
     padding-top: 60px;
 }
+#wanted_vod div h2{
+    font-size: 30px;
+}
+#wanted_vod a{
+    margin: 5px 0 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    vertical-align: middle;
+    color: #767676!important;
+
+}
 .vod_list{
-    padding: 0px;
+    padding: 10px 0px 60px;
     margin:30px auto 0;
     display: flex;
-    flex-wrap: wrap;
     width: 70%;
 }
 .vod_list li{
-    margin : 10px;
+    width: 100%;
+    margin: 0px 20px 50px;
+    height: 200px;
+}
+.vod_list li img{    
+    width: 100%;
+    height: 170px;
+    
+}
+.vod_list li p{
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 17px 0 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    font: 800;
 }

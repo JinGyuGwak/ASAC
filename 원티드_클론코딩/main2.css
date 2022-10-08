@@ -6,8 +6,12 @@
     font-size: 30px;
 }
 #title_3min_article{
-    font-size: 20px;
-    color: rgba(107, 99, 99, 0.596);
+    margin: 5px 0 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    vertical-align: middle;
+    color: #767676!important;
 }
 .title_3min_img_list{
     padding: 0px;
@@ -18,7 +22,6 @@
 .title_3min_img_list li a div{
     width: 100%;
     margin: 10px;
-
 }
 .title_3min_img_list li{
     width: 100%;
