@@ -1,0 +1,80 @@
+.hunting_main5{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 110px 0 0;
+}
+.hunting_main6{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 110px 0 0;
+}
+
+.hunting_main5_div1{
+    width: 70%;
+    margin: 0 auto;
+}
+.hunting_main5_div1 div{
+    font-size: 25px;
+    
+}
+.hunting_main5_div1 div span{
+    font-size: 25px;    
+    font-weight: 600;    
+}
+#posit{
+    color: rgb(118,118,118);
+    line-height: 18px;
+    font-size: 15px;
+    padding: 9px;
+    margin-bottom: 20px;
+}
+.main5_list_box{
+    width: 100%;
+
+}
+.main5_ul{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    padding-left: 0px;
+}
+.main5_ul li{
+    width: 100%;
+    padding: 10px;
+}
+.main5_ul li a img{
+    width: 100%;
+}
+.main5_list_box_text{
+    display:flex;
+}
+.main5_list_box_text_div1{
+    text-align: left;
+    margin: 0px 10px 10px;
+}
+.main5_list_box_text_div1_p1{
+    font-size: 20px;
+    line-height: 6px;
+    font-weight: 600;
+}
+.main5_list_box_text_div1_p2{
+    font-size: 15px;
+    line-height: 6px;
+    font-weight: 100;
+}
+.main5_list_box_btn{
+    margin-left: 65%;
+    width: 100px;
+    height: 50px;
+    color: #36f;
+    background-color: white;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px rgb(225, 226, 227) solid;
+    border-radius: 38.5px;
+    font-size: 20px;
+    font-weight: 800;
+}

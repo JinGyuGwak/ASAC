@@ -1,0 +1,33 @@
+.container_box{
+    margin-top: 70px;
+    padding-top: 25px;
+}
+.img_box{
+    width: 100%;
+}
+.img_main{
+    width: 70%;
+    margin:0 auto;
+}
+.img_main img{
+    width: 100%;
+}
+.hunting_btn{
+    width: 70%;
+    margin:0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 21px 0px;
+    color: white;
+    background-color: rgba(55, 55, 232, 0.916);
+    vertical-align: middle;
+    text-align: center;
+    
+    border: 1px rgba(55, 55, 232, 0.916) solid;
+    border-radius: 38.5px;
+    font-weight: 900;
+    font-size: 30px;
+}
+.hunting_btn a{
+    color: white;
+}
