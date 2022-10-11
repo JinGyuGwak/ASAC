@@ -13,21 +13,21 @@
 }
 #main2_h_tag_answer{
     padding-top: 10px;
-    font-size: 17px;
+    font-size: 13px;
     font-weight: 200;
-    color: rgba(87, 85, 85, 0.678);
+    color: black(87, 85, 85, 0.678);
 }
 .main2_btn{
     text-align: center;
 }
 .main2_btn button{
-    padding: 20px 40px;
+    padding: 12px 27px;
     color: white;
     background-color: rgba(55, 55, 232, 0.916);
     vertical-align: middle;
     text-align: center;
     border: 1px rgba(55, 55, 232, 0.916) solid;
     border-radius: 38.5px;
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 800;
 }

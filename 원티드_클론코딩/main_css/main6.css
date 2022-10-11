@@ -12,8 +12,7 @@
 }
 .main6_container:nth-child(1){
     text-align: left;
-    
-    font-size: 20px;
+    font-size: 15px;
 }
 .main6_container:nth-child(1) h1{
     font-weight: 900;
@@ -21,11 +20,11 @@
 .main6_container button{
     background-color: rgb(70, 137, 225);
     border: 1px solid skyblue;
-    width: 45%;
-    height: 60px;
+    width: 50%;
+    height: 20%;
     margin-top: 25px;
     border-radius: 38.5px;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 14px;
     color: white;
 }

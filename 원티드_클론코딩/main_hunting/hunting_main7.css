@@ -1,0 +1,47 @@
+.hunting_main7{
+    width:100%;
+    text-align: center;
+    padding: 70px 0 0;
+}
+.hunting_main7_h{
+    width: 70%;
+    margin: 0 auto;
+}
+.hunting_main7_img_div{
+    width: 70%;
+    margin: 0 auto;
+}
+.hunting_main7_img_list{
+    width: 100%;
+    padding: 0;
+    display: flex;
+}
+.hunting_main7_img_list li{
+    width: 22.5%;
+    padding: 10px;
+}
+.hunting_main7_img_list li img{
+    width: 100%;
+}
+.hunting_main7_img_list_text_div{
+    text-align: left;
+    padding: 14px 0;
+}
+.hunting_main7_img_list_p1{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    
+
+}
+.hunting_main7_img_list_p2{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px 0 0;
+}
+.hunting_main7_img_list_p3{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(153,153,153);
+    margin-top: 10px 0 0;
+}

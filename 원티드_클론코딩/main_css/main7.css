@@ -7,9 +7,10 @@
 .main7_content{
     width: 70%;
     margin: 0 auto;
+    text-align: center;
 }
 .main7_content h2{
-    font-size: 30px;
+    font-size: 20px;
     margin:0 0 30px;
 }
 .main7_gridbox{
@@ -24,13 +25,14 @@
 .main7_gridcont{
     border-right:1px solid rgba(128, 128, 128, 0.37); ;
     padding: 25px;
+    text-align: center;
 }
 .main7_gridcont i{
     display: block;
-    font-size: 50px;
+    font-size: 33px;
 }
 .grid_cont_text{
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 20px;
 
 }

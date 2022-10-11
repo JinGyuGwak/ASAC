@@ -16,20 +16,20 @@
 }
 #first_c{
     color: #5071dc;
-    font-size: 35px;
+    font-size: 24px;
     line-height: 80px;
     font-weight: 800;
 }
 #second_c{
     width: 10%;
-    padding: 5px 15px;
+    padding: 7px 4px;
     color: white;
     background-color: rgba(55, 55, 232, 0.916);
     vertical-align: middle;
     text-align: center;
     border: 1px rgba(55, 55, 232, 0.916) solid;
     border-radius: 38.5px;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 800;
 
 }
