@@ -35,7 +35,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center; /*각 요소들을 중앙에 정렬 */
-    padding: 8px 12px;
+    padding: 8px 0px;
 }
 a{
     text-decoration: none;

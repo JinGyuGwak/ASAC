@@ -3,6 +3,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+#menuBar{
+    padding: 0;
+}
 body {
     box-sizing: border-box;
 	line-height: 1;
@@ -155,7 +158,7 @@ body{
 }
 #modal_login{
     width: 25%;
-    height: 70%;
+    height: 80%;
     overflow-y: scroll;
     background-color: white;
     position:absolute;  /* top, left에 의해 위치 지정 */
@@ -233,5 +236,22 @@ body{
     border: 0px;
     padding: 5px 5px 20px 20px;
 
+
+}
+/*밑에 부분 부터 hunting_detail css입니다.*/
+.hunting_detail_container{
+    width: 70%;
+    margin:0 auto;
+    margin-top: 90px;
+}
+.hunting_detail_main{
+    display: flex;;
+
+}
+.hunting_detail_div1{
+    width: 62%;
+}
+.hunting_detail_div1 img{
+    width: 100%;
 
 }
