@@ -235,6 +235,103 @@ body{
     background-color: white;
     border: 0px;
     padding: 5px 5px 20px 20px;
+}
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+#lightbox_info{
+    position: fixed;  /* 위치 고정 */
+    width:100%;  /* 너비 */
+    height:100%;  /* 높이 */
+    background-color:rgba(0,0,0,0.4);  /* 배경색 */
+    top:0;  /* 시작 위치 - 위쪽 끝 */
+    left:0; /* 시작 위치 - 왼쪽 끝 */
+    display: none;
+    scrollbar-width: 0px;
+}
+#modal_login{
+    -ms-overflow-style: none;
+}
+#modal_login::-webkit-scrollbar{
+    display: none;
+}
+#modal_login{
+    width: 25%;
+    height: 80%;
+    overflow-y: scroll;
+    background-color: white;
+    position:absolute;  /* top, left에 의해 위치 지정 */
+    top:50%;  /* 위쪽에서 50% 부터 */
+    left:50%;  /* 왼쪽에서 50% 부터 */
+    transform:translate(-50%, -50%);  /* 요소를 화면 중앙에 표시하기 위해 이동 */
+    scrollbar-width: 0px;
+}
+#modal_login header{
+    text-align: center;
+}
+#modal_login_text{
+    font-size:0.75em;
+}
+#modal_login_text h3{
+    font-weight: 300;
+}
+.mail_page{
+    padding: 20px;
+}
+#mail_label{
+    color: rgb(118, 118, 118);
+    font-weight: 300;
+    font-size: 0.75em;
+}
+#email_text{
+    margin-top: 11px;
+    width: 100%;
+    height: 3.13em;
+    border: 1px solid rgba(118, 118, 118, 0.418) ;
+}
+#email_submit_btn{
+    width: 100%;
+    border: 1px blue solid;
+    border-radius: 28px;
+    height: 3.3em;
+    color: white;
+    background-color: blue;
+}
+.email_submit_text{
+    text-align: center;
+    color: rgb(118, 118, 118);
+    font-size: 0.8em;
+}
+.sns_list{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    margin:0 auto;
+    text-align: center;
+}
+.sns_list li{
+    margin-bottom: 0.5em;
+    width: 25%;
+}
+#foot{
+    margin-top: 26px;
+    text-align: center;
+    font-size: 0.5em;
+    line-height: 18px;
+    color: #999;
+}
+.modal_exit{
+    display: flex;
+
+}
+.modal_exit p{
+    margin: 0 auto;
+    font-size: 1.5em;
+    width: 100%;
+    padding-left: 1em;
+}
+.modal_exit button{
+    background-color: white;
+    border: 0px;
+    padding: 5px 5px 20px 20px;
 
 
 }
@@ -253,5 +350,56 @@ body{
 }
 .hunting_detail_div1 img{
     width: 100%;
+}
+.hunting_detail_aside{
+    width: 30%;
+    height: 17.125em;
+    padding: 24px 20px;
+    margin-left: 1.25em;
+    border: 1px solid #e1e2e3;
+}
 
+.hunting_detail_aside_div ul{
+    display: flex;
+    padding: 0;
+}
+.hunting_detail_aside_div ul li{
+    width: 50%;
+}
+.hunting_detail_aside_div h3{
+    margin: 0;
+    font-size: 0.95em;
+}
+.hunting_detail_aside_div li h4{
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #999;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+.hunting_detail_aside_div li p{
+    font-size: 0.95em;
+    color: #333;
+    font-weight: 600;
+
+}
+.hunting_detail_aside_btn{
+    display: block;
+    height: 3.125rem;
+    width: 100%;
+    margin-bottom: 0.75em;
+    border-radius: 25px;
+    background-color: #fff;
+    border: 1px solid #36f;
+    font-weight: 600;
+    color: #36f;
+    font-size: 1em;
+}
+#like_btn{
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #e1e2e3;
+    margin-right: 12px;
+    background-color: white;
+    padding: 0 15px;
 }
