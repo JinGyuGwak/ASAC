@@ -305,11 +305,33 @@ body{
     list-style: none;
     display: flex;
     margin:0 auto;
-    text-align: center;
+    margin: 1rem 0 4rem;
 }
-.sns_list li{
+.sns_list button{
+    border: 0px;
+    background-color: white;    
     margin-bottom: 0.5em;
     width: 25%;
+}
+.sns_list button div{
+    font-size: 1.5rem;
+    height: 100%;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#facebook_btn{
+    background-color: blue;
+    color: white;
+}
+#google_btn{
+    background-color: white;
+}
+#apple_btn{
+    color: white;
+    background-color: black;
 }
 #foot{
     margin-top: 26px;
