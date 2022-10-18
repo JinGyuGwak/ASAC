@@ -8,6 +8,9 @@ var lightbox_info =document.getElementById("lightbox_info");
 var set_btn=document.getElementById("btn_login");
 var exitBtn=document.getElementById("modalX");
 
+var memberDaoTwo=document.getElementById("memberDaoTwo");
+var backDao=document.getElementById("backDao");
+var memberdaoForEmailValue=document.getElementById("memberdaoForEmailValue");
 
 var email_text=document.getElementById("email_text");
 var email_submit_btn=document.getElementById("email_submit_btn");
@@ -40,12 +43,22 @@ function showLightbox() {
    
 
 function showSignpage(){
-    alert("이제 회원가입 창 만들어라");
+    memberDaoTwo.style.display="block";
+    lightbox.style.display = "none";
 }
+
+backDao.onclick=function(){
+    memberDaoTwo.style.display="none";
+    lightbox.style.display = "block";
+}
+
 
 function goInfo(){
     if(email_text.value.length==0){
         alert("이메일을 입력하세요");
     }
-    else {showSignpage();}
+    else {
+        memberdaoForEmailValue.value = email_text.value;
+        showSignpage();
+    }
 }

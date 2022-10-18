@@ -1,0 +1,150 @@
+body{
+    position: fixed;  /* 위치 고정 */
+    width:100%;  /* 너비 */
+    height:100%;  /* 높이 */
+    background-color:rgba(0,0,0,0.4);  /* 배경색 */
+    top:0;  /* 시작 위치 - 위쪽 끝 */
+    left:0; /* 시작 위치 - 왼쪽 끝 */
+    scrollbar-width: 0px;
+}
+.member_dao{
+    border: 1px solid rgb(225, 226, 227);
+    width: 25rem;
+    height: 80%;
+    overflow-y: scroll;
+    background-color: white;
+    position:absolute;  /* top, left에 의해 위치 지정 */
+    top:50%;  /* 위쪽에서 50% 부터 */
+    left:50%;  /* 왼쪽에서 50% 부터 */
+    transform:translate(-50%, -50%);  /* 요소를 화면 중앙에 표시하기 위해 이동 */
+    scrollbar-width: 0px;
+}
+.member_dao::-webkit-scrollbar{
+    display: none;
+}
+.dao_header{
+    
+    margin: 1rem 0;
+    width: 90%;
+    display: flex;
+    padding: 0px 20px;
+
+}
+.dao_header button{
+    text-align: left;
+    width: 40%;
+    background-color: white;
+    border: 0px;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+}
+.dao_header p{
+    font-weight: 600;
+    font-size: 1.1rem;
+    width: 70%;
+    margin: 0 auto;
+}
+.mamberdaoForm{
+    padding: 20px;
+    width: 90%;
+    
+}
+.formText{
+    
+    margin: 1.063rem 0 0.438rem;
+}
+.memberdaoFormEmail{
+    color: black;
+    width: 90%;
+    height: 3rem;
+    min-height: 3rem;
+    padding: 0px 12px;
+    border: 1px solid rgb(225, 226, 227);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    background-color: #f2f4f7;
+}
+.memberdaoFormEmail::placeholder{
+    color :rgb(204,204,204);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.memberdaoFormInput{
+    width: 90%;
+    height: 3rem;
+    min-height: 3rem;
+    padding: 0px 12px;
+    border: 1px solid rgb(225, 226, 227);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+.phoneSelect{    
+    width: 98%;
+    height: 3rem;
+    min-height: 3rem;
+    padding: 0px 12px;
+    border: 1px solid rgb(225, 226, 227);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+#phoneNum{
+    width: 50%;
+    height: 3rem;
+    min-height: 3rem;
+    padding: 0px 12px;
+    border: 1px solid rgb(225, 226, 227);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    
+}
+#phoneGet{
+    background-color: rgb(242, 244, 247);
+    color :rgb(204,204,204);
+    width: 36.5%;
+    height: 3rem;
+    min-height: 3rem;
+    border: 1px solid rgb(242, 244, 247);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px 0px 10px 10px;
+    padding: 0 0.625rem;
+}
+#passwordP{
+    font-size: 0.81rem;
+    font-weight: 400;
+    margin-top: 0;
+    color:rgb(136,136,136);
+}
+.agreeCheck{
+    display: flex;
+    margin-bottom: -0.8rem;
+}
+.agreeCheck input{
+    padding:20px;
+}
+.agreeCheck p{
+    margin: 0.25rem;
+    margin-bottom: 1rem;
+}
+#formSubmit{
+    margin: 1.875rem 0 0.63rem;
+    background-color: rgb(242, 244, 247);
+    border:1px solid rgb(204,204,204);
+    border-radius: 1.563rem;
+    width: 100%;
+    height: 3.125rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(204,204,204);
+
+}

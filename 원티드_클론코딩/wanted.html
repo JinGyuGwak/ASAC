@@ -19,7 +19,7 @@
 </script>
 </head>
 
-<body>
+<body style="overflow-x: hidden">
     <div class="page">
         <div class="header" >
             <div id="header_wrap">
@@ -194,38 +194,31 @@
                     <ul class="title_3min_img_list">
                         <li>
                             <a href="">
-                                <div><img src="./img/optimize.webp"></div>
+                                <div class="title_3min_img_listImg"><img src="./img/optimize.webp"></div>
                                 <p>선선한 가을 날씨에 어울릴 아티클 추천 리스트</p>
-                                <div>
-                                    #아이 #hr #개발                             
-                                </div>
+                                <span class="title_3min_img_listTag"> #아이 #hr #개발</span>
+                                
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div><img src="./img/optimize.webp"></div>
+                                <div class="title_3min_img_listImg"><img src="./img/optimize.webp"></div>
                                 <p>선선한 가을 날씨에 어울릴 아티클 추천 리스트</p>
-                                <div>
-                                    #아이 #hr #개발                               
-                                </div>
+                                <span class="title_3min_img_listTag"> #아이 #hr #개발</span>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div><img src="./img/optimize.webp"></div>
+                                <div class="title_3min_img_listImg"><img src="./img/optimize.webp"></div>
                                 <p>선선한 가을 날씨에 어울릴 아티클 추천 리스트</p>
-                                <div>
-                                    #아이 #hr #개발                                
-                                </div>
+                                <span class="title_3min_img_listTag"> #아이 #hr #개발</span>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <div><img src="./img/optimize.webp"></div>
+                                <div class="title_3min_img_listImg"><img src="./img/optimize.webp"></div>
                                 <p>선선한 가을 날씨에 어울릴 아티클 추천 리스트</p>
-                                <div>
-                                    #아이 #hr #개발                                
-                                </div>
+                                <span class="title_3min_img_listTag"> #아이 #hr #개발</span>
                             </a>
                         </li>
                     </ul>
@@ -301,7 +294,7 @@
                     <ul>
                         <li>
                             <a href="">
-                                <div><img src="./img/aa.webp" ></div>
+                                <div id="main5ImgDiv"><img src="./img/aa.webp" ></div>
                                 <div class="main5_text">
                                     <div>
                                         <span>온라인</span>
@@ -319,7 +312,7 @@
                         
                         <li>
                             <a href="">
-                                <div><img src="./img/aa.webp" ></div>
+                                <div id="main5ImgDiv"><img src="./img/aa.webp" ></div>
                                 <div class="main5_text">
                                     <div >
                                         <span>온라인</span>
@@ -365,11 +358,32 @@
             <div class="main7_content">
                 <h2>채용 정보를 찾고 계셨나요?</h2>
             </div>
+            
             <div class="main7_gridbox">
-                <div class="main7_gridcont"><a href=""><i class="fa-solid fa-magnifying-glass"></i><br><span class="grid_cont_text">채용공고 ></span></a></div>
-                <div class="main7_gridcont"><a href=""><i class="fa-solid fa-user"></i><br><span class="grid_cont_text">내 프로필 ></span></a></div>
-                <div class="main7_gridcont"><a href=""><i class="fa-solid fa-building"></i><br><span class="grid_cont_text">매치업 ></span></a></div>
-                <div class="main7_gridcont"><a href=""><i class="fa-solid fa-sliders"></i><br><span class="grid_cont_text">직군별 연봉 ></span></a></div>
+
+                <div class="main7_gridcont">
+                    <a href="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <br><span class="grid_cont_text">채용공고 ></span></a>
+                </div>
+
+                <div class="main7_gridcont">
+                    <a href="">
+                        <i class="fa-solid fa-user"></i>
+                        <br><span class="grid_cont_text">내 프로필 ></span></a>
+                </div>
+
+                <div class="main7_gridcont">
+                    <a href="">
+                        <i class="fa-solid fa-building"></i>
+                        <br><span class="grid_cont_text">매치업 ></span></a>
+                </div>
+
+                <div class="main7_gridcont">
+                    <a href="">
+                        <i class="fa-solid fa-sliders"></i>
+                        <br><span class="grid_cont_text">직군별 연봉 ></span></a>
+                </div>
 
             </div>
         </div>
@@ -424,6 +438,98 @@
             </div>
 
         </footer>
+    </div>
+
+    <div id="memberDaoTwo">
+        <div class="member_dao">
+            <div class="dao_header">
+                <button id="backDao">〈 </button>
+                <p>회원가입</p>            
+            </div> 
+            <form class="mamberdaoForm"> <!-- 메인 컨테이너-->
+    
+                <div class="formText">이메일</div>      <!--이메일 -->
+                <div>
+                    <input type="email" placeholder="wlsrb2695@naver.com" class="memberdaoFormEmail" id="memberdaoForEmailValue">
+                    
+                </div>
+    
+            
+        
+                <div class="formText">이름</div>      <!--이름-->
+                <div>
+                    <input type="email" placeholder="이름을 입력해주세요." class="memberdaoFormInput">
+                </div>
+        
+            
+        
+                <div class="formText">휴대폰 번호</div>      <!--휴대폰 번호-->
+                <div>                
+                    <select class="phoneSelect">
+                            <option value="KR">South Korea +82</option>
+                            <option value="JP">Japan +81</option>
+                            <option value="TW">Taiwan +886</option>
+                            <option value="HK">Hong Kong +852</option>
+                            <option value="SG">Singapore +65</option>
+                            <option value="AF">Afghanistan +93</option>
+                            <option value="AL">Albania +355</option>
+                            <option value="DZ">Algeria +213</option>
+                            <option value="AO">Angola +244</option>
+                            <option value="AR">Argentina +54</option>
+                            <option value="AM">Armenia +374</option>
+                            <option value="AW">Aruba +297</option>
+                            <option value="KR">South Korea +82</option>
+                            <option value="JP">Japan +81</option>
+                            <option value="TW">Taiwan +886</option>
+                            <option value="HK">Hong Kong +852</option>
+                            <option value="SG">Singapore +65</option>
+                            <option value="AF">Afghanistan +93</option>
+                            <option value="AL">Albania +355</option>
+                            <option value="DZ">Algeria +213</option>
+                            <option value="AO">Angola +244</option>
+                            <option value="AR">Argentina +54</option>
+                            <option value="AM">Armenia +374</option>
+                            <option value="AW">Aruba +297</option>
+                    </select>                
+                    <div>
+                        <input type="text" placeholder="(예시)01040228739." id="phoneNum">
+                        <button id="phoneGet">인증번호 받기</button>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="인증번호를 입력해주세요." class="memberdaoFormEmail">
+                    </div>                
+                </div>
+                
+        
+                <div class="formText">비밀번호</div>      <!-- 비밀번호 -->
+                
+                <input type="text" placeholder="비밀번호를 입력해주세요." class="memberdaoFormEmail">
+                <input type="text" placeholder="비밀번호를 다시 한번 입력해주세요." class="memberdaoFormEmail">
+                <p id="passwordP">영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상 16자 이하로 입력해주세요.</p>                               
+                
+                <div class="agreeCheck">
+                    <input type="checkbox" name="is_agree_all" >
+                    <p>전체 동의</p>
+                </div>
+                <hr>
+                <div class="agreeCheck">
+                    <input type="checkbox" style="height: 1.5rem; ">
+                    <p>만 14세 이상입니다. (필수)</p>
+                </div>
+                <div class="agreeCheck">
+                    <input type="checkbox" style="height: 1.5rem;" >
+                    <p>oneID 이용약관 동의 (필수)</p>
+                </div>
+                <div class="agreeCheck">
+                    <input type="checkbox" style="height: 1.5rem;" >
+                    <p>개인정보 및 수집 이용 동의 (필수)</p>
+                </div>
+                <button id="formSubmit">가입하기</button>
+    
+    
+            </form>
+    
+        </div>
     </div>
 
     <div id="lightbox">
@@ -486,56 +592,7 @@
                 </p>
             </div>
         </div>
-    </div>
-
-    <!-- <div id="lightbox_info">
-        <div id="modal_login">
-            <header style="padding: 16px 20px;">
-                <div class="modal_exit">
-                    <p style="font-weight: 900;">wanted</p>
-                    <button id="modalX">X</button>
-                    
-                </div>
-                <br>
-                <div id="modal_login_text" style="padding-top:20px;">
-                    <h1 id="dd">회원가입 테스트</h1>
-                    <h1 id="dd">커리어 플랫폼, 원티드!</h1>
-                    <h3>커리어 성장과 행복을 위한 여정</h3>
-                    <h3>지금 원티드에서 시작하세요.</h3>
-                </div>          
-            </header>
-            <div class="mail_page">
-                <div style="padding-bottom:14px">
-                    <label id="mail_label">이메일<br></label>
-                    <input type="email" placeholder="이메일을 입력해 주세요." id="email_text">
-                </div>
-    
-                <div>
-                    <button id="email_submit_btn">📧이메일로 계속하기</button>
-                    <div class="email_submit_text">
-                        <div style="margin: 0.8em 0;">or</div>
-                        <div style="margin-bottom: 1em;">다음 계정으로 계속하기</div>
-                    </div>
-                </div>
-                <div class="sns">
-                    <ul class="sns_list">
-                        <li><i class="fa-solid fa-comment"></i>
-                            <br>Kakao</li>
-                        <li><i class="fa-brands fa-facebook-f"></i>
-                            <br>Facebook</li>
-                        <li><i class="fa-brands fa-google"></i>
-                            <br>Google</li>
-                        <li><i class="fa-brands fa-apple"></i>
-                            <br>Apple</li>
-                    </ul>
-                </div>
-                <p id="foot">
-                    걱정마세요! 여러분의 지원 활동은 SNS에 노출되지 않습니다.
-                    <br>회원가입 시 개인정보 처리방침과 이용약관을 확인하였으며, 동의합니다.
-                </p>
-            </div>
-        </div>
-    </div> -->
+    </div>    
     
     <script src="./wanted.js"></script>
 </body>

@@ -24,7 +24,8 @@
 }
 .main7_gridcont{
     border-right:1px solid rgba(128, 128, 128, 0.37); ;
-    padding: 25px;
+    padding: 25px 0px;
+
     text-align: center;
 }
 .main7_gridcont i{
