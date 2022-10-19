@@ -576,5 +576,126 @@ body{
     font-size: 1rem;
     font-weight: 600;
     color: rgb(204,204,204);
+}
+.detailMainHeader{
+    margin: 40px 0 30px;
+}
+#detadilMainHeaderTitle{
+    font-size: 1.2rem;
+}
+#detadilMainHeaderSp1{
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0;
+}
+#detadilMainHeaderSp2{
+    font-size: 4px;
+    font-weight: 600;
+    padding: 2px 5px;
+    border: 1px rgb(0, 174, 173) solid;
+    color: rgb(0, 174, 173);
+    margin: 0 5px;
+}
+#detadilMainHeaderSp3{
+    padding: 0 10px;
+    border-left: 1px rgb(153,153,153) solid;
+    margin-left: 10px;
+    color:rgb(153,153,153);
+    font-size:14px
+}
+#detailMainHeaderUl{
+    padding: 0;
+    display: flex;
+}
+#detailMainHeaderUl li{
+    font-size: 10px;
+    padding: 9px 14px;
+    margin: 0 6px 10px 0;
+    background-color: rgb(243,245,248);
+    border-radius: 25px;
 
+}
+#hunting_detail_main1P{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    
+    line-height: 28px;
+}
+#detailMainHeaderSkill{
+    padding: 0;
+    display: flex;
+
+}
+#detailMainHeaderSkill li{
+    font-size: 8px;
+    font-weight: 600;
+    padding: 9px 14px;
+    margin: 0 6px 45px 0;
+    background-color: rgb(228,244,236);
+    border-radius: 25px;
+}
+.bor_B{
+    border-bottom: #eee 1px solid;
+}
+.deadline{
+    display: flex;
+}
+.deadlineP1{
+    width: 5rem;
+    font-weight: 600;
+    color: rgb(153,153,153);
+    font-size: 0.9rem;
+}
+.deadlineP2{
+    font-weight: 600;
+    color: rgb(51,51,51);
+    font-size: 0.9rem;
+}
+#gooMap{
+    margin-top: 20px;
+    width: 41.313rem;
+    height: 17.5rem;
+}
+.companyDiv{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 20px 20px;    
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+    background-color: white;
+    border: rgb(225, 226, 227) 1px solid;
+}
+.companyDiv img{
+    width: 3.125rem;
+    height:3.125rem;
+}
+#companyDivH{
+    text-align: left;
+    margin-left: 1rem;
+}
+#companyDivH h5{
+    margin:0 0 5px;
+}
+#companyDivH h6{
+    margin: 0;
+}
+.companyDivBtn{
+    width: 85%;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    border: 0px;
+    
+}
+#foBtn{
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: rgb(51,102,255);
+    border-radius: 25px;
+    background-color: white;
+    border: 1px rgb(225, 226, 227) solid;
+    padding: 0.3rem 1.4rem;
 }

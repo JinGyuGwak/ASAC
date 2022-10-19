@@ -1,14 +1,14 @@
 var a=document.getElementById("menuBar");
 var menu_ul=document.getElementById("menuHover"); // me=ul임
 var bodypage=document.getElementById("bodypage");
-
+var set_btn=document.getElementById("btn_login");
 a.addEventListener("mouseover",menuShow);
 bodypage.addEventListener("mouseover",menudown);
 
 var lightbox = document.getElementById("lightbox");  // 라이트 박스. querySelector("#lightbox")도 가능
 var lightbox_info =document.getElementById("lightbox_info");
 
-var set_btn=document.getElementById("btn_login");
+
 var exitBtn=document.getElementById("modalX");
 
 var memberDaoTwo=document.getElementById("memberDaoTwo");
@@ -20,6 +20,10 @@ var email_submit_btn=document.getElementById("email_submit_btn");
 
 email_submit_btn.addEventListener("click",goInfo);
 set_btn.addEventListener("click", showLightbox);
+
+function showLightbox() {
+	lightbox.style.display = "block";  // 라이트박스 이미지를 화면에 표시
+}
 
 function menudown(){
     //햄버거 메뉴에서 벗어나면서 menu_ul 이 아웃 될 경우 display none으로 하고 싶은데 
@@ -42,10 +46,6 @@ modalX.onclick = function() {  //click 이벤트가 발생했을 때 실행할 �
 	lightbox.style.display = "none";  // lightbox 요소를 화면에서 감춤
 }
 
-
-function showLightbox() {
-	lightbox.style.display = "block";  // 라이트박스 이미지를 화면에 표시
-}
 
    
 
