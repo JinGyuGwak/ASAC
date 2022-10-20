@@ -170,6 +170,7 @@ body{
     margin: 0 auto;
     padding: 0;
     flex-wrap: wrap;
+    margin-top: -1.3rem;
 }
 .inImg li{
     width: 15.625rem;
