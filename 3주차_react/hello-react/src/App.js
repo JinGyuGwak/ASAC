@@ -1,5 +1,6 @@
 import "./App.css";
-import Counter from "./Counter";
+import Say from "./say";
+
 /*
 function App() {
   const name = '리액트';
@@ -12,7 +13,7 @@ function App() {
 }*/
 
 const App = () => {
-  return <Counter />;
+  return <Say />; //함수명 써야함
 };
 
 export default App;
