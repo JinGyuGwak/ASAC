@@ -42,6 +42,10 @@ modalX.onclick = function () {
   //click 이벤트가 발생했을 때 실행할 함수 선언
   email_text.value = "";
   lightbox.style.display = "none"; // lightbox 요소를 화면에서 감춤
+  is_agree_all.checked = false;
+  is_agree.forEach((checkbox) => {
+    checkbox.checked = selectAll.checked;
+  });
 };
 
 function showSignpage() {
