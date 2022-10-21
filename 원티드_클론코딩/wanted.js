@@ -62,12 +62,22 @@ function goInfo() {
     showSignpage();
   }
 }
-let is_agree_all = document.querySelector(".agrreCheck");
-let is_agree = document.getElementsByClassName("is_agree");
+let is_agree_all = document.querySelector(".is_agree_all");
+let is_agree = document.getElementsByName("is_agree");
 
 function selectAll(selectAll) {
-  const checkboxes = document.getElementsByName("is_agree");
-  checkboxes.forEach((checkbox) => {
+  is_agree.forEach((checkbox) => {
     checkbox.checked = selectAll.checked;
   });
+}
+function allCheck() {
+  if (
+    is_agree[0].checked == true &&
+    is_agree[1].checked == true &&
+    is_agree[2].checked == true
+  ) {
+    is_agree_all.checked = true;
+  } else {
+    is_agree_all.checked = false;
+  }
 }
