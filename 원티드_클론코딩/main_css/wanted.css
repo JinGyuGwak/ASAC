@@ -564,7 +564,12 @@ body{
 .agreeCheck p{
     margin: 0.4rem;
 }
-.is_agree{
+.is_agree_all{
+    width: 1rem;
+    height: 1rem;
+
+}
+#is_agree{
     width: 1rem;
     height: 1rem;
 }

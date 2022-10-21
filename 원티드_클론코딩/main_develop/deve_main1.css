@@ -27,11 +27,15 @@ body{
 }
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 .deve_main1{
+    position:unset;
+    background-color: white;
     margin-top: 90px;
     width: 100%;
     border-bottom: 2px solid rgb(236,236,236);
 }
 .deve_main1_article{
+
+    position:unset;
     width: 70%;
     margin: 0 auto;
 }
@@ -56,6 +60,7 @@ body{
     line-height: 29px;
 }
 .deveMainBox{
+    background-color: white;
     width: 100%;
     padding: 20px 0 0;
     margin-bottom: 1.563rem;
@@ -104,6 +109,7 @@ body{
     font-size: 13px;
 }
 .deve_main2{
+    display: block;
     width: 70%;
     margin: 0 auto;
     margin-top: 38px;

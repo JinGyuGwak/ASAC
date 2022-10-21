@@ -507,20 +507,20 @@
                 <p id="passwordP">영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상 16자 이하로 입력해주세요.</p>                               
                 
                 <div class="agreeCheck">
-                    <input type="checkbox" name="is_agree_all" class="is_agree">
+                    <input type="checkbox" value="selectall" class="is_agree_all" onclick='selectAll(this)'>
                     <p style="margin: 0.2rem;">전체 동의</p>
                 </div>
                 <hr>
                 <div class="agreeCheck">
-                    <input type="checkbox" style="height: 1.5rem;" class="is_agree">
+                    <input type="checkbox" style="height: 1.5rem;" name="is_agree">
                     <p>만 14세 이상입니다. (필수)</p>
                 </div>
                 <div class="agreeCheck">
-                    <input type="checkbox" style="height: 1.5rem;" class="is_agree" >
+                    <input type="checkbox" style="height: 1.5rem;" name="is_agree" >
                     <p>oneID 이용약관 동의 (필수)</p>
                 </div>
                 <div class="agreeCheck">
-                    <input type="checkbox" style="height: 1.5rem;" class="is_agree">
+                    <input type="checkbox" style="height: 1.5rem;" name="is_agree">
                     <p>개인정보 및 수집 이용 동의 (필수)</p>
                 </div>
                 <button id="formSubmit">가입하기</button>
