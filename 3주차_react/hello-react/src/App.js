@@ -1,19 +1,10 @@
-import "./App.css";
-import Say from "./say";
+import { Component } from "react";
+import ValidationSample from "./ValidationSample";
 
-/*
-function App() {
-  const name = '리액트';
-  return (
-    <>
-      <div className='react'>{name}</div>
-      <input/>      
-    </> 
-  );
-}*/
-
-const App = () => {
-  return <Say />; //함수명 써야함
-};
+class App extends Component {
+  render() {
+    return <ValidationSample />;
+  }
+}
 
 export default App;
