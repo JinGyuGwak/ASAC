@@ -1,10 +1,17 @@
 import { Component } from "react";
-import ValidationSample from "./ValidationSample";
+import IterationSample from "./IterationSample";
 
 class App extends Component {
   render() {
-    return <ValidationSample />;
+    return <IterationSample />;
   }
 }
 
 export default App;
+
+/*
+함수형 컴포넌트
+const App =() =>{
+  return <ValidationSample/>;
+};
+*/
