@@ -1,20 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PageA from "./PageA";
+import PageB from "./PageB";
+import PageC from "./PageC";
 
 function App() {
-  const x='리액트';
-
   return (
-    <div>
-      <div>
-        <h1>{x}</h1>
-      </div>
-      <div>
-        공부하기
-      </div>
-      {x=='리액트'?<h2>리액트입니다.</h2>:<h2>리액트 아닙니다.</h2>}
-    </div>
-  
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<PageA />} />
+        <Route path="b" element={<PageB />} />
+        <Route path="c" element={<PageC />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
