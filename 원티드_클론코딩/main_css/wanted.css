@@ -379,6 +379,8 @@ body{
     padding: 24px 20px;
     margin-left: 1.25em;
     border: 1px solid #e1e2e3;
+    position: sticky;
+    top: 90px;
 }
 
 .hunting_detail_aside_div ul{
