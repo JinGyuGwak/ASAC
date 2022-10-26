@@ -1,0 +1,35 @@
+.hunting_main3{
+    text-align: center;
+    width: 100%;
+    margin: 20px 0 60px;
+    background: -webkit-gradient(linear,left top,right top,color-stop(-.28%,#ddebff),to(#b7d8ff));
+    background: linear-gradient(90deg,#ddebff -.28%,#b7d8ff);
+}
+.hunting_main3 button{
+    background: -webkit-gradient(linear,left top,right top,color-stop(-.28%,#ddebff),to(#b7d8ff));
+    background: linear-gradient(90deg,#ddebff -.28%,#b7d8ff);
+    width: 70%;
+    border: 0px solid;
+    text-align: left;
+    margin: 0 auto;
+    margin: 50px 0;
+}
+#first_c{
+    color: #5071dc;
+    font-size: 24px;
+    line-height: 80px;
+    font-weight: 800;
+}
+#second_c{
+    width: 10%;
+    padding: 7px 4px;
+    color: white;
+    background-color: rgba(55, 55, 232, 0.916);
+    vertical-align: middle;
+    text-align: center;
+    border: 1px rgba(55, 55, 232, 0.916) solid;
+    border-radius: 38.5px;
+    font-size: 12px;
+    font-weight: 800;
+
+}

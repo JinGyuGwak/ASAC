@@ -1,0 +1,30 @@
+.main6{
+    padding: 60px 0px;
+    background-color: #f7f7f7;
+    width: 100%;
+}
+.main6_container{
+    padding: 40px;
+    width: 70%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.main6_container:nth-child(1){
+    text-align: left;
+    font-size: 15px;
+}
+.main6_container:nth-child(1) h1{
+    font-weight: 900;
+}
+.main6_container button{
+    background-color: rgb(70, 137, 225);
+    border: 1px solid skyblue;
+    width: 50%;
+    height: 20%;
+    margin-top: 25px;
+    border-radius: 38.5px;
+    font-weight: 900;
+    font-size: 14px;
+    color: white;
+}

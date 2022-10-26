@@ -1,0 +1,30 @@
+.hunting_main4{
+    width: 100%;
+    padding: 60px 0 10px;
+    margin: 0 auto;
+    
+}
+.hunting_main4 ul{
+    padding-left: 0;
+    width: 70%;    
+    margin: 0 auto;
+    display: flex;
+    border-radius: 38.5px;
+}
+.hunting_main4 ul li{
+    font-size: 20px;
+    font-weight: 500;
+    width: 50%;
+    text-align: center;
+    padding: 30px 20px;
+}
+#first_list{
+    background-color: #f2f5ff;
+    border-top-left-radius: 38.5px;
+    border-bottom-left-radius: 38.5px;
+}
+#second_list{
+    border-top-right-radius: 38.5px;
+    border-bottom-right-radius: 38.5px;
+    background-color: #f2fbf5;
+}

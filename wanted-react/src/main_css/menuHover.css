@@ -1,0 +1,20 @@
+#menuBar{
+    padding: 10px;
+}
+#menuHover{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+    width: 15%;
+    height: 100%;
+    display: none;
+    margin : 50px 0px 0px 15%;
+    margin-left: 15%;
+    position: fixed;
+}
+#menuHover li{
+    line-height: 40px;
+    padding: 0px 22px;
+    background-color: white;
+    width: 80%;
+}

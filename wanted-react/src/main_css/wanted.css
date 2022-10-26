@@ -1,0 +1,738 @@
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+#menuBar{
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+.page{
+    width: 100vw;
+    height: 100vh;
+    /*display: flex;
+    flex-direction: column;*/
+    margin:0 auto;
+}
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+.main1Body{
+    width: 100%; 
+    padding: 60px 0px;
+}
+#insight{
+    width: 70%;
+}
+.main{
+    margin-top: 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.first_main{
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.first_main img{
+    width: 100%;
+}
+
+#insight{
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 800;
+    width: 70%;
+}
+.btn_list{
+    width:70%;
+    justify-content:space-between;
+    align-items: center; /*각 요소들을 중앙에 정렬 */
+    vertical-align: middle;
+    line-height: 20px;
+    display:flex;
+    padding:15px;
+    padding-left: 0px;
+    margin:0 auto;
+    font-weight: 600;    
+}
+.btn_list li button{
+    padding:10px 20px;
+    color: #666;
+    background-color: white;
+    height: 40px;
+    border-radius: 25px;
+    margin: 20px 0;
+    font-size: 14px;
+    margin-left: 15px;
+    font-weight: 700;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+}
+
+.img_list{
+    padding: 0;
+    margin:20px auto 0;
+    flex-wrap: wrap;
+    display: flex;
+    width: 70%;
+}
+.img_list li{
+    margin: 0px 0px 40px;
+    width: 25%;
+    flex-direction: column;
+    text-align: left;
+}
+.img_list li img{
+    width: 95%;
+}
+.img_list li p{
+    width: 95%;
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 17px 0 8px;
+    line-height: 24px;   
+}
+.img_list li a :nth-child(3){
+    text-align: left;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 19px;
+    color: rgb(170,170,170);
+    
+}
+#more{
+    width: 70%;
+    margin:0 auto;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+}
+#more_btn{
+    height: 50px;
+    width: 400px;
+    padding:10px 30px;
+    color: #666;
+    background-color: white;
+    border-radius: 25px;
+    margin: 30px 0;
+    margin-left: 15px;
+    font-weight: 900;
+    font-size: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+
+}
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+#lightbox{
+    position: fixed;  /* 위치 고정 */
+    width:100%;  /* 너비 */
+    height:100%;  /* 높이 */
+    background-color:rgba(0,0,0,0.4);  /* 배경색 */
+    top:0;  /* 시작 위치 - 위쪽 끝 */
+    left:0; /* 시작 위치 - 왼쪽 끝 */
+    display: none;
+    scrollbar-width: 0px;
+}
+#modal_login{
+    -ms-overflow-style: none;
+}
+#modal_login::-webkit-scrollbar{
+    display: none;
+}
+#modal_login{
+    width: 25%;
+    height: 80%;
+    overflow-y: scroll;
+    background-color: white;
+    position:absolute;  /* top, left에 의해 위치 지정 */
+    top:50%;  /* 위쪽에서 50% 부터 */
+    left:50%;  /* 왼쪽에서 50% 부터 */
+    transform:translate(-50%, -50%);  /* 요소를 화면 중앙에 표시하기 위해 이동 */
+    scrollbar-width: 0px;
+}
+#modal_login header{
+    text-align: center;
+}
+#modal_login_text{
+    font-size:0.75em;
+}
+#modal_login_text h3{
+    font-weight: 300;
+}
+.mail_page{
+    padding: 20px;
+}
+#mail_label{
+    color: rgb(118, 118, 118);
+    font-weight: 300;
+    font-size: 0.75em;
+}
+#email_text{
+    margin-top: 11px;
+    width: 100%;
+    height: 3.13em;
+    border: 1px solid rgba(118, 118, 118, 0.418) ;
+}
+#email_submit_btn{
+    width: 100%;
+    border: 1px blue solid;
+    border-radius: 28px;
+    height: 3.3em;
+    color: white;
+    background-color: blue;
+}
+.email_submit_text{
+    text-align: center;
+    color: rgb(118, 118, 118);
+    font-size: 0.8em;
+}
+.sns_list{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    margin:0 auto;
+    text-align: center;
+}
+.sns_list li{
+    margin-bottom: 0.5em;
+    width: 25%;
+}
+#foot{
+    margin-top: 26px;
+    text-align: center;
+    font-size: 0.5em;
+    line-height: 18px;
+    color: #999;
+}
+.modal_exit{
+    display: flex;
+
+}
+.modal_exit p{
+    margin: 0 auto;
+    font-size: 1.5em;
+    width: 100%;
+    padding-left: 1em;
+}
+.modal_exit button{
+    background-color: white;
+    border: 0px;
+    padding: 5px 5px 20px 20px;
+}
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+#lightbox_info{
+    position: fixed;  /* 위치 고정 */
+    width:100%;  /* 너비 */
+    height:100%;  /* 높이 */
+    background-color:rgba(0,0,0,0.4);  /* 배경색 */
+    top:0;  /* 시작 위치 - 위쪽 끝 */
+    left:0; /* 시작 위치 - 왼쪽 끝 */
+    display: none;
+    scrollbar-width: 0px;
+}
+#modal_login{
+    -ms-overflow-style: none;
+}
+#modal_login::-webkit-scrollbar{
+    display: none;
+}
+#modal_login{
+    width: 25%;
+    height: 80%;
+    overflow-y: scroll;
+    background-color: white;
+    position:absolute;  /* top, left에 의해 위치 지정 */
+    top:50%;  /* 위쪽에서 50% 부터 */
+    left:50%;  /* 왼쪽에서 50% 부터 */
+    transform:translate(-50%, -50%);  /* 요소를 화면 중앙에 표시하기 위해 이동 */
+    scrollbar-width: 0px;
+}
+#modal_login header{
+    text-align: center;
+}
+#modal_login_text{
+    font-size:0.75em;
+}
+#modal_login_text h3{
+    font-weight: 300;
+}
+.mail_page{
+    padding: 20px;
+}
+#mail_label{
+    color: rgb(118, 118, 118);
+    font-weight: 300;
+    font-size: 0.75em;
+}
+#email_text{
+    margin-top: 11px;
+    width: 100%;
+    height: 3.13em;
+    border: 1px solid rgba(118, 118, 118, 0.418) ;
+}
+#email_submit_btn{
+    width: 100%;
+    border: 1px blue solid;
+    border-radius: 28px;
+    height: 3.3em;
+    color: white;
+    background-color: blue;
+}
+.email_submit_text{
+    text-align: center;
+    color: rgb(118, 118, 118);
+    font-size: 0.8em;
+}
+.sns_list{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    margin:0 auto;
+    margin: 1rem 0 4rem;
+}
+.sns_list button{
+    border: 0px;
+    background-color: white;    
+    margin-bottom: 0.5em;
+    width: 25%;
+}
+.sns_list button div{
+    font-size: 1.5rem;
+    height: 100%;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#facebook_btn{
+    background-color: blue;
+    color: white;
+}
+#google_btn{
+    background-color: white;
+    border: 1px black solid;
+}
+#apple_btn{
+    color: white;
+    background-color: black;
+}
+#foot{
+    margin-top: 26px;
+    text-align: center;
+    font-size: 0.5em;
+    line-height: 18px;
+    color: #999;
+}
+.modal_exit{
+    display: flex;
+
+}
+.modal_exit p{
+    margin: 0 auto;
+    font-size: 1.5em;
+    width: 100%;
+    padding-left: 1em;
+}
+.modal_exit button{
+    background-color: white;
+    border: 0px;
+    padding: 5px 5px 20px 20px;
+
+
+}
+
+/*밑에 부분 부터 hunting_detail css입니다.*/
+.hunting_detail_container{
+    width: 70%;
+    margin:0 auto;
+    margin-top: 90px;
+}
+.hunting_detail_main{
+    display: flex;;
+
+}
+.hunting_detail_div1{
+    width: 62%;
+}
+.hunting_detail_div1 img{
+    width: 100%;
+}
+.hunting_detail_aside{
+    width: 30%;
+    height: 17.125em;
+    padding: 24px 20px;
+    margin-left: 1.25em;
+    border: 1px solid #e1e2e3;
+    position: sticky;
+    top: 90px;
+}
+
+.hunting_detail_aside_div ul{
+    display: flex;
+    padding: 0;
+}
+.hunting_detail_aside_div ul li{
+    width: 50%;
+}
+.hunting_detail_aside_div h3{
+    margin: 0;
+    font-size: 0.95em;
+}
+.hunting_detail_aside_div li h4{
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #999;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+.hunting_detail_aside_div li p{
+    font-size: 0.95em;
+    color: #333;
+    font-weight: 600;
+
+}
+.hunting_detail_aside_btn{
+    display: block;
+    height: 3.125rem;
+    width: 100%;
+    margin-bottom: 0.75em;
+    border-radius: 25px;
+    background-color: #fff;
+    border: 1px solid #36f;
+    font-weight: 600;
+    color: #36f;
+    font-size: 1em;
+}
+#like_btn{
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #e1e2e3;
+    margin-right: 12px;
+    background-color: white;
+    padding: 0 15px;
+}
+
+
+/*모달2번쨰페이지 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+#memberDaoTwo{
+    position: fixed;  /* 위치 고정 */
+    width:100%;  /* 너비 */
+    height:100%;  /* 높이 */
+    background-color:rgba(0,0,0,0.4);  /* 배경색 */
+    top:0;  /* 시작 위치 - 위쪽 끝 */
+    left:0; /* 시작 위치 - 왼쪽 끝 */
+    scrollbar-width: 0px;
+    display: none;
+}
+.member_dao{
+    border: 1px solid rgb(225, 226, 227);
+    width: 25rem;
+    height: 80%;
+    overflow-y: scroll;
+    background-color: white;
+    position:absolute;  /* top, left에 의해 위치 지정 */
+    top:50%;  /* 위쪽에서 50% 부터 */
+    left:50%;  /* 왼쪽에서 50% 부터 */
+    transform:translate(-50%, -50%);  /* 요소를 화면 중앙에 표시하기 위해 이동 */
+    scrollbar-width: 0px;
+}
+.member_dao::-webkit-scrollbar{
+    display: none;
+}
+.dao_header{
+    margin: 1rem 0;
+    width: 90%;
+    display: flex;
+    padding: 0px 20px;
+
+}
+.dao_header button{
+    text-align: left;
+    width: 40%;
+    background-color: white;
+    border: 0px;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+}
+.dao_header p{
+    font-weight: 600;
+    font-size: 1.1rem;
+    width: 70%;
+    margin: 0 auto;
+}
+.mamberdaoForm{
+    padding: 20px;
+    width: 90%;
+    
+}
+.formText{
+    
+    margin: 1.063rem 0 0.438rem;
+}
+.memberdaoFormEmail{
+    color: black;
+    width: 90%;
+    height: 3rem;
+    min-height: 3rem;
+    padding: 0px 12px;
+    border: 1px solid rgb(225, 226, 227);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    background-color: #f2f4f7;
+}
+.memberdaoFormEmail::placeholder{
+    color :rgb(204,204,204);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.memberdaoFormInput{
+    width: 90%;
+    height: 3rem;
+    min-height: 3rem;
+    padding: 0px 12px;
+    border: 1px solid rgb(225, 226, 227);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+.phoneSelect{    
+    width: 98%;
+    height: 3rem;
+    min-height: 3rem;
+    padding: 0px 12px;
+    border: 1px solid rgb(225, 226, 227);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+#phoneNum{
+    width: 50%;
+    height: 3rem;
+    min-height: 3rem;
+    padding: 0px 12px;
+    border: 1px solid rgb(225, 226, 227);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    
+}
+#phoneGet{
+    background-color: rgb(242, 244, 247);
+    color :rgb(204,204,204);
+    width: 36.5%;
+    height: 3rem;
+    min-height: 3rem;
+    border: 1px solid rgb(242, 244, 247);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px 0px 10px 10px;
+    padding: 0 0.625rem;
+}
+#passwordP{
+    font-size: 0.81rem;
+    font-weight: 400;
+    margin-top: 0;
+    color:rgb(136,136,136);
+}
+.agreeCheck{
+    display: flex;
+}
+.agreeCheck input{
+    padding:20px;
+}
+.agreeCheck p{
+    margin: 0.4rem;
+}
+.is_agree_all{
+    width: 1rem;
+    height: 1rem;
+
+}
+#is_agree{
+    width: 1rem;
+    height: 1rem;
+}
+#formSubmit{
+    margin: 1.875rem 0 0.63rem;
+    background-color: rgb(242, 244, 247);
+    border:1px solid rgb(204,204,204);
+    border-radius: 1.563rem;
+    width: 100%;
+    height: 3.125rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(204,204,204);
+}
+.detailMainHeader{
+    margin: 40px 0 30px;
+}
+#detadilMainHeaderTitle{
+    font-size: 1.2rem;
+}
+#detadilMainHeaderSp1{
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0;
+}
+#detadilMainHeaderSp2{
+    font-size: 4px;
+    font-weight: 600;
+    padding: 2px 5px;
+    border: 1px rgb(0, 174, 173) solid;
+    color: rgb(0, 174, 173);
+    margin: 0 5px;
+}
+#detadilMainHeaderSp3{
+    padding: 0 10px;
+    border-left: 1px rgb(153,153,153) solid;
+    margin-left: 10px;
+    color:rgb(153,153,153);
+    font-size:14px
+}
+#detailMainHeaderUl{
+    padding: 0;
+    display: flex;
+}
+#detailMainHeaderUl li{
+    font-size: 10px;
+    padding: 9px 14px;
+    margin: 0 6px 10px 0;
+    background-color: rgb(243,245,248);
+    border-radius: 25px;
+
+}
+#hunting_detail_main1P{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    
+    line-height: 28px;
+}
+#detailMainHeaderSkill{
+    padding: 0;
+    display: flex;
+
+}
+#detailMainHeaderSkill li{
+    font-size: 8px;
+    font-weight: 600;
+    padding: 9px 14px;
+    margin: 0 6px 45px 0;
+    background-color: rgb(228,244,236);
+    border-radius: 25px;
+}
+.bor_B{
+    border-bottom: #eee 1px solid;
+}
+.deadline{
+    display: flex;
+}
+.deadlineP1{
+    width: 5rem;
+    font-weight: 600;
+    color: rgb(153,153,153);
+    font-size: 0.9rem;
+}
+.deadlineP2{
+    font-weight: 600;
+    color: rgb(51,51,51);
+    font-size: 0.9rem;
+}
+#gooMap{
+    margin-top: 20px;
+    width: 41.313rem;
+    height: 17.5rem;
+}
+.companyDiv{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 0.8rem;    
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    border: rgb(225, 226, 227) 1px solid;
+}
+.companyDiv img{
+    width: 3.125rem;
+    height:3.125rem;
+}
+#companyDivH{
+    text-align: left;
+    margin-left: 1rem;
+}
+#companyDivH h5{
+    margin:0 0 5px;
+}
+#companyDivH h6{
+    margin: 0;
+}
+.companyDivBtn{
+    width: 85%;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    border: 0px;
+    
+}
+#foBtn{
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: rgb(51,102,255);
+    border-radius: 25px;
+    background-color: white;
+    border: 1px rgb(225, 226, 227) solid;
+    padding: 0.3rem 1.4rem;
+}
+.readMe{
+    border: 1px rgb(225, 226, 227) solid;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 20px;
+}
+.readMe h5{
+    font-size: 10px;
+    margin-left:0.5rem;
+    text-align: left;
+}
+#hunting_detail_img_header{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
