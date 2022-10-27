@@ -66,6 +66,8 @@ a{
 }
 #btnser{
     line-height: 0px;
+    padding: 0px;
+    padding-top: 3px;
 }
 #btn_company_service{
     font-size: 12px;
@@ -94,6 +96,7 @@ a{
     vertical-align: middle;
     list-style:none;
     display: inline-flex;
+    text-align: right;
 }
 .navbar_link li{
     vertical-align: middle;
