@@ -2,7 +2,8 @@ import "./MainFirst.css";
 import "./Wanted_develop.css";
 import Header from "./Header";
 import Footer from "./Footer";
-const Wanted_develop = () => {
+
+function Wanted_develop() {
   return (
     <>
       <Header></Header>
@@ -312,5 +313,5 @@ const Wanted_develop = () => {
       </div>
     </>
   );
-};
+}
 export default Wanted_develop;

@@ -1,13 +1,14 @@
 import "./MainFirst.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import CareerInsight from "./Module/CareerInsight";
 import {
   FaSearch,
   FaUserAlt,
   FaHospitalAlt,
   FaCreditCard,
 } from "react-icons/fa";
-const MainFirst = () => {
+function MainFirst() {
   return (
     <>
       <Header></Header>
@@ -52,100 +53,11 @@ const MainFirst = () => {
               </li>
             </ul>
           </div>
+
           <ul class="img_list">
-            <li>
-              <a href="">
-                <div>
-                  <img src="./img/want.webp" />
-                </div>
-                <p>코딩초보들이 헷갈리는 용어 : API가 뭐냐면...</p>
-                <div>
-                  <i class="fa-brands fa-youtube"></i>
-                  <span>코딩애플</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div>
-                  <img src="./img/want.webp" />
-                </div>
-                <p>코딩초보들이 헷갈리는 용어 : API가 뭐냐면</p>
-                <div>
-                  <i class="fa-brands fa-youtube"></i>
-                  <span>코딩애플</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div>
-                  <img src="./img/want.webp" />
-                </div>
-                <p>코딩초보들이 헷갈리는 용어 : API가 뭐냐면</p>
-                <div>
-                  <i class="fa-brands fa-youtube"></i>
-                  <span>코딩애플</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div>
-                  <img src="./img/want.webp" />
-                </div>
-                <p>코딩초보들이 헷갈리는 용어 : API가 뭐냐면</p>
-                <div>
-                  <i class="fa-brands fa-youtube"></i>
-                  <span>코딩애플</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div>
-                  <img src="./img/want.webp" />
-                </div>
-                <p>코딩초보들이 헷갈리는 용어 : API가 뭐냐면</p>
-                <div>
-                  <i class="fa-brands fa-youtube"></i>
-                  <span>코딩애플</span>
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="">
-                <div>
-                  <img src="./img/want.webp" />
-                </div>
-                <p>
-                  코딩초보들이 헷갈리는 용어 : API가 뭐냐면.........(대체 그게
-                  뭔데!)
-                </p>
-                <div>
-                  <i class="fa-brands fa-youtube"></i>
-                  <span>코딩애플</span>
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="">
-                <div>
-                  <img src="./img/want.webp" />
-                </div>
-                <p>
-                  코딩초보들이 헷갈리는 용어 : API가 뭐냐면.........(대체 그게
-                  뭔데!)
-                </p>
-                <div>
-                  <i class="fa-brands fa-youtube"></i>
-                  <span>코딩애플</span>
-                </div>
-              </a>
-            </li>
+            <CareerInsight />
           </ul>
+
           <div id="more">
             <button id="more_btn">더 많은 콘텐츠 보기</button>
           </div>
@@ -373,5 +285,5 @@ const MainFirst = () => {
       <Footer></Footer>
     </>
   );
-};
+}
 export default MainFirst;

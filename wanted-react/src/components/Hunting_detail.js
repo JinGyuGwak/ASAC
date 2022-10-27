@@ -1,8 +1,9 @@
 import "./MainFirst.css";
 import "./Hunting_detail.css";
+
 import Header from "./Header";
 import Footer from "./Footer";
-const Hunting_detail = () => {
+function Hunting_detail() {
   return (
     <>
       <Header></Header>
@@ -250,5 +251,5 @@ const Hunting_detail = () => {
       </div>
     </>
   );
-};
+}
 export default Hunting_detail;

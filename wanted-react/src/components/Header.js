@@ -1,6 +1,6 @@
 import "./hunting_heading.css";
 import { FaSearch } from "react-icons/fa";
-const Header = () => {
+function Header() {
   return (
     <div class="header">
       <div id="header_wrap">
@@ -54,5 +54,5 @@ const Header = () => {
       </div>
     </div>
   );
-};
+}
 export default Header;

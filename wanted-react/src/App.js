@@ -1,9 +1,10 @@
+import React from "react";
 import MainFirst from "./components/MainFirst";
 import Wanted_develop from "./components/Wanted_develop";
 import Hunting_detail from "./components/Hunting_detail";
 import { Fragment } from "react";
 
-const App = () => {
+function App() {
   return (
     <>
       <MainFirst></MainFirst>
@@ -11,6 +12,6 @@ const App = () => {
       <Hunting_detail></Hunting_detail> */}
     </>
   );
-};
+}
 
 export default App;

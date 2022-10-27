@@ -1,0 +1,49 @@
+{
+    "MainInsightData":[
+        {"id" :0, 
+        "imgAdress":"./img/want.webp",
+        "imgAlt":"그냥이미지",
+        "title":"코딩초보들이 헷갈리는 용어 : API가 뭐냐면...",
+        "name":"코딩애플"    
+    },
+    {"id" :1, 
+        "imgAdress":"./img/want.webp",
+        "imgAlt":"그냥이미지",
+        "title":"코딩초보들이 헷갈리는 용어 : API가 뭐냐면...",
+        "name":"코딩애플"    
+    },
+    {"id" :2, 
+        "imgAdress":"./img/want.webp",
+        "imgAlt":"그냥이미지",
+        "title":"코딩초보들이 헷갈리는 용어 : API가 뭐냐면...",
+        "name":"코딩애플"    
+    },
+    {"id" :3, 
+        "imgAdress":"./img/want.webp",
+        "imgAlt":"그냥이미지",
+        "title":"코딩초보들이 헷갈리는 용어 : API가 뭐냐면...",
+        "name":"코딩애플"    
+    },
+    {"id" :4, 
+        "imgAdress":"./img/want.webp",
+        "imgAlt":"그냥이미지",
+        "title":"코딩초보들이 헷갈리는 용어 : API가 뭐냐면...",
+        "name":"코딩애플"    
+    },
+    {"id" :5, 
+        "imgAdress":"./img/want.webp",
+        "imgAlt":"그냥이미지",
+        "title":"코딩초보들이 헷갈리는 용어 : API가 뭐냐면...",
+        "name":"코딩애플"    
+    },
+    {"id" :6, 
+        "imgAdress":"./img/want.webp",
+        "imgAlt":"그냥이미지",
+        "title":"코딩초보들이 헷갈리는 용어 : API가 뭐냐면...",
+        "name":"코딩애플"    
+    }
+    
+
+    ]
+
+}
