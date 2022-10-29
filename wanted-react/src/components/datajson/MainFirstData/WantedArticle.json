@@ -1,0 +1,29 @@
+{
+    "WantedArticles" : [
+        {"id" :0, 
+        "imgAdress":"./img/optimize.webp",
+        "imgAlt":"그림임",
+        "title":"선선한 가을 날씨에 어울릴 아티클 추천 리스트",
+        "hashTag":"#아이 #hr #개발"    
+    },
+    {"id" :1, 
+        "imgAdress":"./img/optimize.webp",
+        "imgAlt":"그림임",
+        "title":"선선한 가을 날씨에 어울릴 아티클 추천 리스트",
+        "hashTag":"#아이 #hr #개발"    
+    },
+    {"id" :2, 
+        "imgAdress":"./img/optimize.webp",
+        "imgAlt":"그림임",
+        "title":"선선한 가을 날씨에 어울릴 아티클 추천 리스트",
+        "hashTag":"#아이 #hr #개발"    
+    },
+    {"id" :3, 
+        "imgAdress":"./img/optimize.webp",
+        "imgAlt":"그림임",
+        "title":"선선한 가을 날씨에 어울릴 아티클 추천 리스트",
+        "hashTag":"#아이 #hr #개발"    
+    }
+    ]
+
+}

@@ -1,0 +1,29 @@
+{
+    "WantedVods" : [
+        {"id" :0, 
+        "imgAdress":"./img/want.webp",
+        "imgAlt":"그림임",
+        "title":"코딩초보들이 헷갈리는 용어 : API가 뭐냐면.........(대체 그게 뭔데!)",
+        "hashTag":"#코딩애플 #바이오 #싱싱"    
+    },
+    {"id" :1, 
+        "imgAdress":"./img/want.webp",
+        "imgAlt":"그림임",
+        "title":"코딩초보들이 헷갈리는 용어 : API가 뭐냐면.........(대체 그게 뭔데!)",
+        "hashTag":"#코딩애플 #바이오 #싱싱"    
+    },
+    {"id" :2, 
+        "imgAdress":"./img/want.webp",
+        "imgAlt":"그림임",
+        "title":"코딩초보들이 헷갈리는 용어 : API가 뭐냐면.........(대체 그게 뭔데!)",
+        "hashTag":"#코딩애플 #바이오 #싱싱"    
+    },
+    {"id" :3, 
+        "imgAdress":"./img/want.webp",
+        "imgAlt":"그림임",
+        "title":"코딩초보들이 헷갈리는 용어 : API가 뭐냐면.........(대체 그게 뭔데!)",
+        "hashTag":"#코딩애플 #바이오 #싱싱"    
+    }
+    ]
+
+}

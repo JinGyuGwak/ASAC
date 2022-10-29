@@ -1,12 +1,12 @@
 import React from "react";
-import MainInsight from "../datajson/MainInsight.json";
+import MainInsight from "../../datajson/MainFirstData/MainInsight.json";
 
 function CareerInsight() {
   return (
     <>
       {MainInsight.MainInsightData.map((mainInsight) => (
         <li key={mainInsight.id}>
-          <a href="#!">
+          <a href="WantedDevelop">
             <img
               className="card-image"
               src={mainInsight.imgAdress}

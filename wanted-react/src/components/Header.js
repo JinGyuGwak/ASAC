@@ -1,4 +1,5 @@
 import "./hunting_heading.css";
+import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 function Header() {
   return (
@@ -10,11 +11,11 @@ function Header() {
             alt="hamberger menu"
             id="menubar"
           ></img>
-          <a href="">Wanted</a>
+          <Link to="/">Wanted</Link>
         </div>
         <ul class="navbar_menu">
           <li>
-            <a href="./watned_hunting.html">채용</a>
+            <Link to="/1">채용</Link>
           </li>
           <li>
             <a href="">이벤트</a>

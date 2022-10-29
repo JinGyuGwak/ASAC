@@ -1,0 +1,135 @@
+{
+    "WantLists":[
+        {"id" : 0 ,
+        "linaddr" : "/2",
+        "imgAdress" : "./img/infini.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Unity 3D 개발자(2년 이상)",
+        "companyName" : "비주얼신",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000dnjs"     
+    },
+    {"id" : 1 ,
+        "linaddr" : "/2",
+        "imgAdress" : "./img/infini.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Unity 3D 개발자(2년 이상)",
+        "companyName" : "비주얼신",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000dnjs" 
+    
+    },
+    {"id" : 2 ,
+        "linaddr" : "/2",
+        "imgAdress" : "./img/infini.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Unity 3D 개발자(2년 이상)",
+        "companyName" : "비주얼신",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000dnjs" 
+    
+    },
+    {"id" : 3 ,
+        "linaddr" : "/2",
+        "imgAdress" : "./img/infini.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Unity 3D 개발자(2년 이상)",
+        "companyName" : "비주얼신",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000dnjs" 
+    
+    },
+    {"id" : 4 ,
+        "linaddr" : "/2",
+        "imgAdress" : "./img/infini.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Unity 3D 개발자(2년 이상)",
+        "companyName" : "비주얼신",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000dnjs" 
+    
+    },
+    {"id" : 5 ,
+        "linaddr" : "/2",
+        "imgAdress" : "./img/infini.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Unity 3D 개발자(2년 이상)",
+        "companyName" : "비주얼신",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000dnjs" 
+    
+    },
+    {"id" : 6 ,
+        "linaddr" : "/2",
+        "imgAdress" : "./img/infini.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Unity 3D 개발자(2년 이상)",
+        "companyName" : "비주얼신",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000dnjs" 
+    
+    },
+    {"id" : 7 ,
+        "linaddr" : "/2",
+        "imgAdress" : "./img/infini.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Unity 3D 개발자(2년 이상)",
+        "companyName" : "비주얼신",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000dnjs" 
+    
+    },
+    {"id" : 8 ,
+        "linaddr" : "/2",
+        "imgAdress" : "./img/infini.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Unity 3D 개발자(2년 이상)",
+        "companyName" : "비주얼신",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000dnjs" 
+    
+    },
+    {"id" : 9 ,
+        "linaddr" : "/2",
+        "imgAdress" : "./img/infini.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Unity 3D 개발자(2년 이상)",
+        "companyName" : "비주얼신",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000dnjs" 
+    
+    },
+    {"id" : 10 ,
+        "linaddr" : "/2",
+        "imgAdress" : "./img/infini.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Unity 3D 개발자(2년 이상)",
+        "companyName" : "비주얼신",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000dnjs" 
+    
+    },
+    {"id" : 11 ,
+        "linaddr" : "/2",
+        "imgAdress" : "./img/infini.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Unity 3D 개발자(2년 이상)",
+        "companyName" : "비주얼신",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000dnjs"     
+    }
+    ]
+    
+}

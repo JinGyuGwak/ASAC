@@ -907,7 +907,7 @@ body{
     height: 100%;
     object-fit: cover;
 }
-#main5ImgDiv{
+.main5ImgDiv{
     width: 32.625rem;
     height: 17.063rem;
 

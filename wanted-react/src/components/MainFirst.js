@@ -1,7 +1,11 @@
 import "./MainFirst.css";
 import Header from "./Header";
 import Footer from "./Footer";
-import CareerInsight from "./Module/CareerInsight";
+import CareerInsight from "./Module/MainFirst/CareerInsight";
+import WantedArticle from "./Module/MainFirst/WantedArticle";
+import CareerPlusEvent from "./Module/MainFirst/CareerEvent";
+import WantedVod from "./Module/MainFirst/WantedVod";
+import InfoCate from "./Module/MainFirst/InfoCate";
 import {
   FaSearch,
   FaUserAlt,
@@ -71,46 +75,12 @@ function MainFirst() {
           </div>
           <div>
             <ul class="title_3min_img_list">
-              <li>
-                <a href="">
-                  <div class="title_3min_img_listImg">
-                    <img src="./img/optimize.webp" />
-                  </div>
-                  <p>선선한 가을 날씨에 어울릴 아티클 추천 리스트</p>
-                  <span class="title_3min_img_listTag"> #아이 #hr #개발</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div class="title_3min_img_listImg">
-                    <img src="./img/optimize.webp" />
-                  </div>
-                  <p>선선한 가을 날씨에 어울릴 아티클 추천 리스트</p>
-                  <span class="title_3min_img_listTag"> #아이 #hr #개발</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div class="title_3min_img_listImg">
-                    <img src="./img/optimize.webp" />
-                  </div>
-                  <p>선선한 가을 날씨에 어울릴 아티클 추천 리스트</p>
-                  <span class="title_3min_img_listTag"> #아이 #hr #개발</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div class="title_3min_img_listImg">
-                    <img src="./img/optimize.webp" />
-                  </div>
-                  <p>선선한 가을 날씨에 어울릴 아티클 추천 리스트</p>
-                  <span class="title_3min_img_listTag"> #아이 #hr #개발</span>
-                </a>
-              </li>
+              <WantedArticle />
             </ul>
           </div>
         </div>
       </div>
+
       <div class="main3">
         <div id="wanted_vod">
           <div>
@@ -122,53 +92,7 @@ function MainFirst() {
         </div>
 
         <ul class="vod_list">
-          <li>
-            <a href="">
-              <div>
-                <img src="./img/want.webp" />
-              </div>
-              <p>
-                코딩초보들이 헷갈리는 용어 : API가 뭐냐면.........(대체 그게
-                뭔데!)
-              </p>
-              <div>
-                <span>#코딩애플 #바이오 #싱싱</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div>
-                <img src="./img/want.webp" />
-              </div>
-              <p>코딩초보들이 헷갈리는 용어 : API가 뭐냐면</p>
-              <div>
-                <span>#코딩애플 #바이오 #싱싱</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div>
-                <img src="./img/want.webp" />
-              </div>
-              <p>코딩초보들이 헷갈리는 용어 : API가 뭐냐면</p>
-              <div>
-                <span>#코딩애플 #바이오 #싱싱</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div>
-                <img src="./img/want.webp" />
-              </div>
-              <p>코딩초보들이 헷갈리는 용어 : API가 뭐냐면</p>
-              <div>
-                <span>#코딩애플 #바이오 #싱싱</span>
-              </div>
-            </a>
-          </li>
+          <WantedVod />
         </ul>
       </div>
       <div class="main4">
@@ -186,45 +110,7 @@ function MainFirst() {
           </div>
           <div class="main5_img_list">
             <ul>
-              <li>
-                <a href="">
-                  <div id="main5ImgDiv">
-                    <img src="./img/aa.webp" />
-                  </div>
-                  <div class="main5_text">
-                    <div>
-                      <span>온라인</span>
-                      <span>네트워킹</span>
-                    </div>
-                    <div>
-                      <h2>스터디살롱 : CS/CX의 실무 꿀팁과 Next Career</h2>
-                    </div>
-                    <div>
-                      <p>2022.11.24 (목)</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="">
-                  <div id="main5ImgDiv">
-                    <img src="./img/aa.webp" />
-                  </div>
-                  <div class="main5_text">
-                    <div>
-                      <span>온라인</span>
-                      <span>네트워킹</span>
-                    </div>
-                    <div>
-                      <h2>스터디살롱 : CS/CX의 실무 꿀팁과 Next Career</h2>
-                    </div>
-                    <div>
-                      <p>2022.11.24 (목)</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
+              <CareerPlusEvent />
             </ul>
           </div>
         </div>
@@ -247,38 +133,7 @@ function MainFirst() {
         </div>
 
         <div class="main7_gridbox">
-          <div class="main7_gridcont">
-            <a href="">
-              <FaSearch class="main7Con" />
-              <br />
-              <span class="grid_cont_text">채용공고 ▷</span>
-            </a>
-          </div>
-
-          <div class="main7_gridcont">
-            <a href="">
-              <FaUserAlt class="main7Con" />
-              <br />
-              <span class="grid_cont_text">내 프로필 ▷</span>
-            </a>
-          </div>
-
-          <div class="main7_gridcont">
-            <a href="">
-              <FaHospitalAlt class="main7Con" />
-              <br />
-              <span class="grid_cont_text">매치업 ▷</span>
-            </a>
-          </div>
-
-          <div class="main7_gridcont">
-            <a href="">
-              <FaCreditCard class="main7Con" />
-
-              <br />
-              <span class="grid_cont_text">직군별 연봉 ▷</span>
-            </a>
-          </div>
+          <InfoCate />
         </div>
       </div>
 

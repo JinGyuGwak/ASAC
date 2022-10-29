@@ -1,0 +1,25 @@
+{
+    "InfoCategories":[
+        {"id":0,
+        "iTag":"<FaSearch className='main7Con'>",
+        "category" : "채용공고 ▷"   
+    },
+    {"id":1,
+        "iTag":"<FaSearch className='main7Con'>",
+        "category" : "내 프로필 ▷"   
+    },
+    {"id":2,
+        "iTag":"<FaSearch className='main7Con'>",
+        "category" : "매치업 ▷"   
+    },
+    {"id":3,
+        "iTag":"<FaSearch className='main7Con'>",
+        "category" : "직군별 연봉 ▷"   
+    }
+
+    ]
+
+
+
+
+}

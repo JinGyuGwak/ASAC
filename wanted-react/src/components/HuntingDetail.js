@@ -3,7 +3,7 @@ import "./Hunting_detail.css";
 
 import Header from "./Header";
 import Footer from "./Footer";
-function Hunting_detail() {
+function HuntingDetail() {
   return (
     <>
       <Header></Header>
@@ -252,4 +252,4 @@ function Hunting_detail() {
     </>
   );
 }
-export default Hunting_detail;
+export default HuntingDetail;

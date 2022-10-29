@@ -1,15 +1,20 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainFirst from "./components/MainFirst";
-import Wanted_develop from "./components/Wanted_develop";
-import Hunting_detail from "./components/Hunting_detail";
+import WantedDevelop from "./components/WantedDevelop";
+import HuntingDetail from "./components/HuntingDetail";
 import { Fragment } from "react";
 
 function App() {
   return (
     <>
-      <MainFirst></MainFirst>
-      {/* <Wanted_develop></Wanted_develop>
-      <Hunting_detail></Hunting_detail> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainFirst />} />
+          <Route path="/1" element={<WantedDevelop />} />
+          <Route path="/2" element={<HuntingDetail />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
