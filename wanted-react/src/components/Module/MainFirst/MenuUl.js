@@ -1,9 +1,13 @@
+import { useState } from "react";
 import "../../hunting_heading.css";
 import "../../MainFirst.css";
-function MenuUL() {
+const MenuUL = (props) => {
+  const style = {
+    display: "block",
+  };
   return (
     <>
-      <ul id="menuHover">
+      <ul id="menuHover" style={style}>
         <li>직군 전체</li>
         <li>
           <a href="wanted_develop.html">개발</a>
@@ -41,5 +45,5 @@ function MenuUL() {
       </ul>
     </>
   );
-}
+};
 export default MenuUL;

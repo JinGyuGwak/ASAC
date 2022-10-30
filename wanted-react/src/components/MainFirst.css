@@ -1017,15 +1017,13 @@ body{
     padding: 60px 0px;
 }
 
-
-
 #menuHover{
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 0;
     width: 15%;
     height: 95%;
-    display: none;
+    display: block;
     margin-top : 1rem;
     position: fixed;
     

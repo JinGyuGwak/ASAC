@@ -3,43 +3,31 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import MenuUL from "./Module/MainFirst/MenuUl";
-/*
-var a = document.getElementById("menuBar");
-a.addEventListener("mouseOver", menuShow);
-function menuShow() {
-  if (menuUl.style.display == "none") {
-    menuUl.style.display = "block";
-  } else {
-    menuUl.style.display = "none";
-  }
-}
 
-export default Header;
-*/
 function Header() {
-  const oveHandler = () => {
-    console.log("아이웅[ㅔ요");
+  const [display, setDisplay] = useState("block");
+
+  const sh = () => {
+    setDisplay("none");
   };
+
   return (
     <>
-      <div class="header">
+      <div className="header">
         <div id="header_wrap">
-          <div class="navbar_logo">
+          <div className="navbar_logo">
             <img
               src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75"
               alt="hamberger menu"
               id="menubar"
-              onClick={() => {
-                console.log("아이웅");
-              }}
+              onClick={sh}
             ></img>
 
-            <MenuUL />
-
+            <MenuUL display={display}></MenuUL>
             <Link to="/">Wanted</Link>
           </div>
 
-          <ul class="navbar_menu">
+          <ul className="navbar_menu">
             <li>
               <Link to="/1">채용</Link>
             </li>
@@ -63,7 +51,7 @@ function Header() {
             </li>
           </ul>
           <div>
-            <ul class="navbar_link">
+            <ul className="navbar_link">
               <li id="ss1">
                 <FaSearch id="ss" />
               </li>

@@ -1,9 +1,9 @@
 import "./Footer.css";
 function Footer() {
   return (
-    <footer class="footer">
-      <div class="foot_main1">
-        <div class="foot_main1_div">
+    <footer className="footer">
+      <div className="foot_main1">
+        <div className="foot_main1_div">
           <div id="abcd">
             <img
               src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Flogo_wanted_black.png&amp;w=110&amp;q=100"
@@ -17,35 +17,35 @@ function Footer() {
             </div>
           </div>
 
-          <div class="sns_tag">
-            <div class="foot_main1_div2">
-              <a href="" class="foot_main_link">
-                <i class="fa-brands fa-instagram"></i>
+          <div className="sns_tag">
+            <div className="foot_main1_div2">
+              <a href="" className="foot_main_link">
+                <i className="fa-brands fa-instagram"></i>
               </a>
-              <a href="" class="foot_main_link">
-                <i class="fa-brands fa-youtube"></i>
+              <a href="" className="foot_main_link">
+                <i className="fa-brands fa-youtube"></i>
               </a>
-              <a href="" class="foot_main_link">
-                <i class="fa-brands fa-facebook"></i>
+              <a href="" className="foot_main_link">
+                <i className="fa-brands fa-facebook"></i>
               </a>
-              <a href="" class="foot_main_link">
-                <i class="fa-solid fa-blog"></i>
+              <a href="" className="foot_main_link">
+                <i className="fa-solid fa-blog"></i>
               </a>
-              <a href="" class="foot_main_link">
-                <i class="fa-brands fa-weixin"></i>
+              <a href="" className="foot_main_link">
+                <i className="fa-brands fa-weixin"></i>
               </a>
-              <a href="" class="foot_main_link">
-                <i class="fa-brands fa-apple"></i>
+              <a href="" className="foot_main_link">
+                <i className="fa-brands fa-apple"></i>
               </a>
-              <a href="" class="foot_main_link">
-                <i class="fa-brands fa-google-play"></i>
+              <a href="" className="foot_main_link">
+                <i className="fa-brands fa-google-play"></i>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="foot_main2">
-        <div class="foot_main2_text">
+      <div className="foot_main2">
+        <div className="foot_main2_text">
           <p>
             (주)원티드랩 (대표이사:이복기) | 서울특별시 송파구 올림픽로 300
             롯데월드타워 35층 | 통신판매번호 : 2020-서울송파-3147
