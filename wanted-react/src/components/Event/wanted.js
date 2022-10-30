@@ -1,5 +1,5 @@
 var a = document.getElementById("menuBar");
-var menu_ul = document.getElementById("menuHover"); // me=ul임
+
 var bodypage = document.getElementById("bodypage");
 var set_btn = document.getElementById("btn_login");
 a.addEventListener("mouseover", menuShow);
@@ -24,6 +24,9 @@ function showLightbox() {
   lightbox.style.display = "block"; // 라이트박스 이미지를 화면에 표시
 }
 
+a.addEventListener("mouseover", menuShow);
+bodypage.addEventListener("mouseover", menudown);
+var menu_ul = document.getElementById("menuHover"); // me=ul임
 function menudown() {
   //햄버거 메뉴에서 벗어나면서 menu_ul 이 아웃 될 경우 display none으로 하고 싶은데
   //함수를 하나 더 만들어야 하나?
