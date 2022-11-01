@@ -1,19 +1,18 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../../hunting_heading.css";
 import "../../MainFirst.css";
-const MenuUL = (props) => {
-  const style = {
-    display: "block",
-  };
+
+function MenuUL({ style }) {
   return (
     <>
-      <ul id="menuHover" style={style}>
+      <ul id="menuHover">
         <li>직군 전체</li>
         <li>
-          <a href="wanted_develop.html">개발</a>
+          <Link to="/1">개발</Link>
         </li>
         <li>
-          <a href="hunting_detail.html">경영º비즈니스</a>
+          <Link to="/1">경영º비즈니스</Link>
         </li>
         <li>마케팅º광고</li>
         <li>디자인</li>
@@ -45,5 +44,5 @@ const MenuUL = (props) => {
       </ul>
     </>
   );
-};
+}
 export default MenuUL;

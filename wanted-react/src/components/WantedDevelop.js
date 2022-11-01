@@ -3,10 +3,38 @@ import "./Wanted_develop.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import InfiniteImg from "./Module/Develope/InfiniteImg";
+import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
+import ActiveRecru from "./Module/Develope/ActiveRecru";
 
 function WantedDevelop() {
+  const [style, setStyle] = useState({ position: "unset" });
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll); //clean up
+    };
+  }, []);
+
+  const handleScroll = () => {
+    console.log(window.scrollY);
+    if (window.scrollY > 273) {
+      setStyle({
+        position: "fixed",
+        marginTop: "-4.55rem",
+        borderBottom: "1px blue solid",
+        paddingBottom: "1.563rem",
+        zIndex: "1",
+      });
+    } else
+      setStyle({
+        position: "unset",
+        marginTop: "0px",
+        borderBottom: "0px",
+      });
+  };
+
   return (
     <>
       <Header></Header>
@@ -19,7 +47,7 @@ function WantedDevelop() {
               <button className="deveMainBtn2">개발 전체 ▽</button>
             </div>
           </div>
-          <div className="deveMainBox">
+          <div className="deveMainBox" style={style}>
             <div className="deveMainHeader">
               <div className="mainInfoList">
                 <button>
@@ -60,88 +88,9 @@ function WantedDevelop() {
           </div>
           <h3 id="devme_main2h">적극 채용 중인 회사</h3>
         </div>
-        <div className="deveMain2Good">
-          <div className="deveMain2GoodLi">
-            <div className="aa">
-              <img src="./img/main2img.webp" alt="뭐냐" />
-            </div>
-            <div className="deveMain2GoodHead">
-              <h4>디리아</h4>
-              <h5>1개 포지션</h5>
-            </div>
-            <div className="abc">
-              <img
-                src="./img/main2SmallImg.webp"
-                alt="작은이미지"
-                className="bb"
-              />
-            </div>
-          </div>
 
-          <div className="deveMain2GoodLi">
-            <div className="aa">
-              <img src="./img/main2img.webp" alt="뭐냐" />
-            </div>
-            <div className="deveMain2GoodHead">
-              <h4>디리아</h4>
-              <h5>1개 포지션</h5>
-            </div>
-            <div className="abc">
-              <img
-                src="./img/main2SmallImg.webp"
-                alt="작은이미지"
-                className="bb"
-              />
-            </div>
-          </div>
-          <div className="deveMain2GoodLi">
-            <div className="aa">
-              <img src="./img/main2img.webp" alt="뭐냐" />
-            </div>
-            <div className="deveMain2GoodHead">
-              <h4>디리아</h4>
-              <h5>1개 포지션</h5>
-            </div>
-            <div className="abc">
-              <img
-                src="./img/main2SmallImg.webp"
-                alt="작은이미지"
-                className="bb"
-              />
-            </div>
-          </div>
-          <div className="deveMain2GoodLi">
-            <div className="aa">
-              <img src="./img/main2img.webp" alt="뭐냐" />
-            </div>
-            <div className="deveMain2GoodHead">
-              <h4>디리아</h4>
-              <h5>1개 포지션</h5>
-            </div>
-            <div className="abc">
-              <img
-                src="./img/main2SmallImg.webp"
-                alt="작은이미지"
-                className="bb"
-              />
-            </div>
-          </div>
-          <div className="deveMain2GoodLi">
-            <div className="aa">
-              <img src="./img/main2img.webp" alt="뭐냐" />
-            </div>
-            <div className="deveMain2GoodHead">
-              <h4>디리아</h4>
-              <h5>1개 포지션</h5>
-            </div>
-            <div className="abc">
-              <img
-                src="./img/main2SmallImg.webp"
-                alt="작은이미지"
-                className="bb"
-              />
-            </div>
-          </div>
+        <div className="deveMain2Good">
+          <ActiveRecru />
         </div>
 
         <div>

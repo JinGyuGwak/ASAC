@@ -7,13 +7,13 @@ function HuntingDetail() {
   return (
     <>
       <Header></Header>
-      <div class="page">
-        <div class="hunting_detail_container">
-          <div class="hunting_detail_main">
-            <div class="hunting_detail_div1">
+      <div className="page">
+        <div className="hunting_detail_container">
+          <div className="hunting_detail_main">
+            <div className="hunting_detail_div1">
               <img src="./img/hunt_de.webp" alt="회사홍보" />
 
-              <div class="detailMainHeader">
+              <div className="detailMainHeader">
                 <h2 id="detadilMainHeaderTitle">Unity 3D 개발자(2년이상)</h2>
                 <div style={{ display: "flex" }}>
                   <h6 id="detadilMainHeaderSp1">비주얼신</h6>
@@ -59,7 +59,7 @@ function HuntingDetail() {
                   바랍니다.
                 </span>
               </p>
-              <div class="bor_B">
+              <div className="bor_B">
                 <h5>기술스택 · 툴</h5>
                 <ul id="detailMainHeaderSkill">
                   <a href="">
@@ -90,14 +90,14 @@ function HuntingDetail() {
               </div>
 
               <div>
-                <div class="deadline">
-                  <p class="deadlineP1">마감일</p>
-                  <p class="deadlineP2">상시</p>
+                <div className="deadline">
+                  <p className="deadlineP1">마감일</p>
+                  <p className="deadlineP2">상시</p>
                 </div>
 
-                <div class="deadline">
-                  <p class="deadlineP1">근무지역</p>
-                  <p class="deadlineP2">
+                <div className="deadline">
+                  <p className="deadlineP1">근무지역</p>
+                  <p className="deadlineP2">
                     13449) 경기도 성남시 수정구 대왕판교로 판교테크로벨리
                     기업지원허브 혁신기술존 2층
                   </p>
@@ -108,8 +108,8 @@ function HuntingDetail() {
               </div>
 
               <div>
-                <div class="companyDiv">
-                  <button class="companyDivBtn">
+                <div className="companyDiv">
+                  <button className="companyDivBtn">
                     <div>
                       <img src="./img/kzone.jpg" alt="케이존" />
                     </div>
@@ -122,8 +122,8 @@ function HuntingDetail() {
                 </div>
               </div>
 
-              <div class="readMe">
-                <svg class="" width="24" height="24" viewBox="0 0 24 24">
+              <div className="readMe">
+                <svg className="" width="24" height="24" viewBox="0 0 24 24">
                   <g fill="currentColor" fill-rule="evenodd">
                     <path
                       fill-rule="nonzero"
@@ -143,8 +143,8 @@ function HuntingDetail() {
               </div>
             </div>
 
-            <div class="hunting_detail_aside">
-              <div class="hunting_detail_aside_div">
+            <div className="hunting_detail_aside">
+              <div className="hunting_detail_aside_div">
                 <h3>채용보상금</h3>
                 <ul>
                   <li>
@@ -157,35 +157,35 @@ function HuntingDetail() {
                   </li>
                 </ul>
               </div>
-              <button class="hunting_detail_aside_btn">
-                <i class="fa-solid fa-bookmark"></i> 북마크하기
+              <button className="hunting_detail_aside_btn">
+                <i className="fa-solid fa-bookmark"></i> 북마크하기
               </button>
               <button
-                class="hunting_detail_aside_btn"
+                className="hunting_detail_aside_btn"
                 style={{ backgroundColor: "#36f", color: "white" }}
               >
                 지원하기
               </button>
-              <button id="like_btn">♡9</button>
+              <button id="like_btn">♡ 9</button>
             </div>
           </div>
         </div>
 
         <div style={{ marginTop: "70px" }}>
           <h5 id="hunting_detail_img_header">이 포지션을 찾고 계셨나요?</h5>
-          <ul class="inImg">
+          <ul className="inImg">
             <li>
               <a href="">
                 <img src="./img/infini.webp" alt="히히" />
               </a>
-              <div class="infiniText">
-                <div class="infiniText1">Unity 3D 개발자(2년 이상)</div>
-                <div class="infiniText2">비주얼신</div>
+              <div className="infiniText">
+                <div className="infiniText1">Unity 3D 개발자(2년 이상)</div>
+                <div className="infiniText2">비주얼신</div>
                 <div>
-                  <span class="infiniText3">응답률 매우 높음</span>
+                  <span className="infiniText3">응답률 매우 높음</span>
                 </div>
-                <div class="infiniText4">서울·한국</div>
-                <div class="infiniText5">채용보상금 1,000,000원</div>
+                <div className="infiniText4">서울·한국</div>
+                <div className="infiniText5">채용보상금 1,000,000원</div>
               </div>
             </li>
 
@@ -193,56 +193,56 @@ function HuntingDetail() {
               <a href="">
                 <img src="./img/infini.webp" alt="히히" />
               </a>
-              <div class="infiniText">
-                <div class="infiniText1">Unity 3D 개발자(2년 이상)</div>
-                <div class="infiniText2">비주얼신</div>
+              <div className="infiniText">
+                <div className="infiniText1">Unity 3D 개발자(2년 이상)</div>
+                <div className="infiniText2">비주얼신</div>
                 <div>
-                  <span class="infiniText3">응답률 매우 높음</span>
+                  <span className="infiniText3">응답률 매우 높음</span>
                 </div>
-                <div class="infiniText4">서울·한국</div>
-                <div class="infiniText5">채용보상금 1,000,000원</div>
+                <div className="infiniText4">서울·한국</div>
+                <div className="infiniText5">채용보상금 1,000,000원</div>
               </div>
             </li>
             <li>
               <a href="">
                 <img src="./img/infini.webp" alt="히히" />
               </a>
-              <div class="infiniText">
-                <div class="infiniText1">Unity 3D 개발자(2년 이상)</div>
-                <div class="infiniText2">비주얼신</div>
+              <div className="infiniText">
+                <div className="infiniText1">Unity 3D 개발자(2년 이상)</div>
+                <div className="infiniText2">비주얼신</div>
                 <div>
-                  <span class="infiniText3">응답률 매우 높음</span>
+                  <span className="infiniText3">응답률 매우 높음</span>
                 </div>
-                <div class="infiniText4">서울·한국</div>
-                <div class="infiniText5">채용보상금 1,000,000원</div>
+                <div className="infiniText4">서울·한국</div>
+                <div className="infiniText5">채용보상금 1,000,000원</div>
               </div>
             </li>
             <li>
               <a href="">
                 <img src="./img/infini.webp" alt="히히" />
               </a>
-              <div class="infiniText">
-                <div class="infiniText1">Unity 3D 개발자(2년 이상)</div>
-                <div class="infiniText2">비주얼신</div>
+              <div className="infiniText">
+                <div className="infiniText1">Unity 3D 개발자(2년 이상)</div>
+                <div className="infiniText2">비주얼신</div>
                 <div>
-                  <span class="infiniText3">응답률 매우 높음</span>
+                  <span className="infiniText3">응답률 매우 높음</span>
                 </div>
-                <div class="infiniText4">서울·한국</div>
-                <div class="infiniText5">채용보상금 1,000,000원</div>
+                <div className="infiniText4">서울·한국</div>
+                <div className="infiniText5">채용보상금 1,000,000원</div>
               </div>
             </li>
             <li>
               <a href="">
                 <img src="./img/infini.webp" alt="히히" />
               </a>
-              <div class="infiniText">
-                <div class="infiniText1">Unity 3D 개발자(2년 이상)</div>
-                <div class="infiniText2">비주얼신</div>
+              <div className="infiniText">
+                <div className="infiniText1">Unity 3D 개발자(2년 이상)</div>
+                <div className="infiniText2">비주얼신</div>
                 <div>
-                  <span class="infiniText3">응답률 매우 높음</span>
+                  <span className="infiniText3">응답률 매우 높음</span>
                 </div>
-                <div class="infiniText4">서울·한국</div>
-                <div class="infiniText5">채용보상금 1,000,000원</div>
+                <div className="infiniText4">서울·한국</div>
+                <div className="infiniText5">채용보상금 1,000,000원</div>
               </div>
             </li>
           </ul>

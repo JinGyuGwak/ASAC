@@ -13,7 +13,7 @@ function InfoCate() {
       {InfoCategory.InfoCategories.map((infocategoy) => (
         <div className="main7_gridcont" key={infocategoy.id}>
           <a href="#!">
-            <FaSearch class="main7Con" />
+            <FaSearch className="main7Con" />
             <br />
             <span className="grid_cont_text">{infocategoy.category}</span>
           </a>

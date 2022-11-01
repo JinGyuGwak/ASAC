@@ -16,18 +16,18 @@ function MainFirst() {
   return (
     <>
       <Header></Header>
-      <div class="main" id="bodypage">
-        <div class="first_main">
+      <div className="main" id="bodypage">
+        <div className="first_main">
           <img src="./img/ii.webp" alt="이미지" />
         </div>
 
-        <div class="mainC">
+        <div className="mainC">
           <div id="insight">
             나에게 필요한 커리어 인사이트
-            <i class="fa-regular fa-circle-question"></i>
+            <i className="fa-regular fa-circle-question"></i>
           </div>
-          <div class="btnMain">
-            <ul class="btn_list">
+          <div className="btnMain">
+            <ul className="btn_list">
               <li>
                 <button>인간관계</button>
               </li>
@@ -58,7 +58,7 @@ function MainFirst() {
             </ul>
           </div>
 
-          <ul class="img_list">
+          <ul className="img_list">
             <CareerInsight />
           </ul>
 
@@ -67,21 +67,21 @@ function MainFirst() {
           </div>
         </div>
       </div>
-      <div class="main2">
+      <div className="main2">
         <div>
           <div>
             <h2 id="title_3min">3분만에 읽는 Wanted+ 아티클</h2>
             <p id="title_3min_article">아티클 전체보기 ▷</p>
           </div>
           <div>
-            <ul class="title_3min_img_list">
+            <ul className="title_3min_img_list">
               <WantedArticle />
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="main3">
+      <div className="main3">
         <div id="wanted_vod">
           <div>
             <h2>직장인을 위한 Wanted+ VOD</h2>
@@ -91,32 +91,32 @@ function MainFirst() {
           </div>
         </div>
 
-        <ul class="vod_list">
+        <ul className="vod_list">
           <WantedVod />
         </ul>
       </div>
-      <div class="main4">
-        <a href="" class="eye_btn">
+      <div className="main4">
+        <a href="" className="eye_btn">
           <div>직군/직무를 입력하면 관련 콘텐츠를 추천해 드려요.👀</div>
         </a>
       </div>
-      <div class="main5">
+      <div className="main5">
         <div>
-          <div class="main5_title">
+          <div className="main5_title">
             <div>
               <h2>커리어 성장을 위한 맞춤 이벤트</h2>
             </div>
             <a href="">이벤트 전체보기 ▷</a>
           </div>
-          <div class="main5_img_list">
+          <div className="main5_img_list">
             <ul>
               <CareerPlusEvent />
             </ul>
           </div>
         </div>
       </div>
-      <div class="main6">
-        <div class="main6_container">
+      <div className="main6">
+        <div className="main6_container">
           <div>
             <h1>wanted+ 구독해야 하는 이유</h1>
             <p>구독자의 서류 합격률이 비구독자보다 1.5배 높아요!</p>
@@ -127,12 +127,12 @@ function MainFirst() {
           </div>
         </div>
       </div>
-      <div class="main7">
-        <div class="main7_content">
+      <div className="main7">
+        <div className="main7_content">
           <h2>채용 정보를 찾고 계셨나요?</h2>
         </div>
 
-        <div class="main7_gridbox">
+        <div className="main7_gridbox">
           <InfoCate />
         </div>
       </div>

@@ -1,0 +1,59 @@
+{
+    "ActivRecruits" :[
+        {
+            "id":0,
+            "imgAdress" : "./img/main2img.webp",
+            "imgAlt" : "이미지임",
+            "companyName" : "다리아",
+            "countPosition": 1,
+            "smallImgAdress":"./img/main2SmallImg.webp",
+            "smallImgAlt":"작은이미지"
+        },
+        {
+            "id":1,
+            "imgAdress" : "./img/main2img.webp",
+            "imgAlt" : "이미지임",
+            "companyName" : "다리아",
+            "countPosition": 1,
+            "smallImgAdress":"./img/main2SmallImg.webp",
+            "smallImgAlt":"작은이미지"
+
+        },
+        {
+            "id":2,
+            "imgAdress" : "./img/main2img.webp",
+            "imgAlt" : "이미지임",
+            "companyName" : "다리아",
+            "countPosition": 1,
+            "smallImgAdress":"./img/main2SmallImg.webp",
+            "smallImgAlt":"작은이미지"
+
+        },
+        {
+            "id":3,
+            "imgAdress" : "./img/main2img.webp",
+            "imgAlt" : "이미지임",
+            "companyName" : "다리아",
+            "countPosition": 1,
+            "smallImgAdress":"./img/main2SmallImg.webp",
+            "smallImgAlt":"작은이미지"
+
+        },
+        {
+            "id":4,
+            "imgAdress" : "./img/main2img.webp",
+            "imgAlt" : "이미지임",
+            "companyName" : "다리아",
+            "countPosition": 1,
+            "smallImgAdress":"./img/main2SmallImg.webp",
+            "smallImgAlt":"작은이미지"
+
+        }
+
+
+
+
+
+    ]
+
+}

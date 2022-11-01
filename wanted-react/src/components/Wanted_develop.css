@@ -27,14 +27,13 @@ body{
 }
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 .deve_main1{
-    position:unset;
     background-color: white;
     margin-top: 90px;
     width: 100%;
     border-bottom: 2px solid rgb(236,236,236);
 }
 .deve_main1_article{
-
+    background-color: white;
     position:unset;
     width: 70%;
     margin: 0 auto;

@@ -3,16 +3,34 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import MenuUL from "./Module/MainFirst/MenuUl";
+import LightBox from "./Module/Modal/LightBox";
 
 function Header() {
-  const [display, setDisplay] = useState("block");
+  const [style, setStyle] = useState(false);
+  const [showDao, setShowDao] = useState(false);
 
-  const sh = () => {
-    setDisplay("none");
+  const daoClick = () => {
+    setShowDao(true);
+  };
+  const bringData = (showDao) => {
+    setShowDao(!showDao);
+  };
+
+  const eventHandle = () => {
+    if (style === false) {
+      setStyle(true);
+    } else {
+      setStyle(false);
+    }
   };
 
   return (
     <>
+      {showDao === true ? (
+        <LightBox bringData={bringData} showdao={showDao} />
+      ) : (
+        ""
+      )}
       <div className="header">
         <div id="header_wrap">
           <div className="navbar_logo">
@@ -20,10 +38,10 @@ function Header() {
               src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75"
               alt="hamberger menu"
               id="menubar"
-              onClick={sh}
+              onMouseOver={eventHandle}
             ></img>
+            {style && <MenuUL />}
 
-            <MenuUL display={display}></MenuUL>
             <Link to="/">Wanted</Link>
           </div>
 
@@ -56,7 +74,9 @@ function Header() {
                 <FaSearch id="ss" />
               </li>
               <li>
-                <button id="btn_login">회원가입/로그인</button>
+                <button id="btn_login" onClick={daoClick}>
+                  회원가입/로그인
+                </button>
               </li>
               <li>
                 <span id="|">|</span>
@@ -71,6 +91,7 @@ function Header() {
     </>
   );
 }
+
 export default Header;
 
 // var bodypage = document.getElementById("bodypage");
