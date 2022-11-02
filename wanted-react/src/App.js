@@ -1,23 +1,23 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainFirst from "./components/MainFirst";
-import WantedDevelop from "./components/WantedDevelop";
-import HuntingDetail from "./components/HuntingDetail";
+import MainFirst from "../src/components/Page/MainFirst";
+import WantedDevelop from "../src/components/Page/WantedDevelop";
+import DevelopeSearch from "../src/components/Page/DevelopeSearch";
+import HuntingDetail from "../src/components/Page/HuntingDetail";
 import { Fragment } from "react";
 import ScrollToTop from "./ScrollToTop";
-import SearchLightBox from "./components/Module/SearchModal/SearchLightBox";
 function App() {
   return (
     <>
-      <SearchLightBox />
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<MainFirst />} />
           <Route path="/1" element={<WantedDevelop />} />
           <Route path="/2" element={<HuntingDetail />} />
+          <Route path="/3" element={<DevelopeSearch />} />
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </>
   );
 }

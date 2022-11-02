@@ -1,11 +1,11 @@
-import "./MainFirst.css";
-import Header from "./Header";
-import Footer from "./Footer";
-import CareerInsight from "./Module/MainFirst/CareerInsight";
-import WantedArticle from "./Module/MainFirst/WantedArticle";
-import CareerPlusEvent from "./Module/MainFirst/CareerEvent";
-import WantedVod from "./Module/MainFirst/WantedVod";
-import InfoCate from "./Module/MainFirst/InfoCate";
+import "../MainFirst.css";
+import Header from "../Header";
+import Footer from "../Footer";
+import CareerInsight from "../Module/MainFirst/CareerInsight";
+import WantedArticle from "../Module/MainFirst/WantedArticle";
+import CareerPlusEvent from "../Module/MainFirst/CareerEvent";
+import WantedVod from "../Module/MainFirst/WantedVod";
+import InfoCate from "../Module/MainFirst/InfoCate";
 import {
   FaSearch,
   FaUserAlt,

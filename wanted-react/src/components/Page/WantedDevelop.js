@@ -1,12 +1,11 @@
-import "./MainFirst.css";
-import "./Wanted_develop.css";
-import Header from "./Header";
-import Footer from "./Footer";
-import InfiniteImg from "./Module/Develope/InfiniteImg";
+import "../MainFirst.css";
+import "../Wanted_develop.css";
+import Header from "../Header";
+import InfiniteImg from "../Module/Develope/InfiniteImg";
 import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
-import ActiveRecru from "./Module/Develope/ActiveRecru";
+import ActiveRecru from "../Module/Develope/ActiveRecru";
 
 function WantedDevelop() {
   const [style, setStyle] = useState({ position: "unset" });
@@ -18,7 +17,6 @@ function WantedDevelop() {
   }, []);
 
   const handleScroll = () => {
-    console.log(window.scrollY);
     if (window.scrollY > 273) {
       setStyle({
         position: "fixed",

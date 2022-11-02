@@ -1,21 +1,16 @@
-import "./hunting_heading.css";
+import "./huntingHeading.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import MenuUL from "./Module/MainFirst/MenuUl";
 import LightBox from "./Module/Modal/LightBox";
+import SearchLightBox from "./Module/SearchModal/SearchLightBox";
 
 function Header() {
   const [style, setStyle] = useState(false);
-  const [showDao, setShowDao] = useState(false);
-
   const daoClick = () => {
     setShowDao(true);
   };
-  const bringData = (showDao) => {
-    setShowDao(!showDao);
-  };
-
   const eventHandle = () => {
     if (style === false) {
       setStyle(true);
@@ -24,8 +19,24 @@ function Header() {
     }
   };
 
+  const [showDao, setShowDao] = useState(false);
+  const bringData = (showDao) => {
+    setShowDao(!showDao);
+  };
+
+  const [showSearch, setShowSearch] = useState(false);
+
+  const bringSearch = () => {
+    setShowSearch(!showSearch);
+  };
+
   return (
     <>
+      {showSearch === true ? (
+        <SearchLightBox bring={bringSearch} showSearch={showSearch} />
+      ) : (
+        ""
+      )}
       {showDao === true ? (
         <LightBox bringData={bringData} showdao={showDao} />
       ) : (
@@ -71,7 +82,7 @@ function Header() {
           <div>
             <ul className="navbar_link">
               <li id="ss1">
-                <FaSearch id="ss" />
+                <FaSearch id="ss" onClick={bringSearch} />
               </li>
               <li>
                 <button id="btn_login" onClick={daoClick}>

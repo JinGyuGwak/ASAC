@@ -1,8 +1,8 @@
-import "./MainFirst.css";
-import "./Hunting_detail.css";
+import "../MainFirst.css";
+import "../Hunting_detail.css";
 
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../Header";
+import Footer from "../Footer";
 function HuntingDetail() {
   return (
     <>

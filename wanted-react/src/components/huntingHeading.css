@@ -25,7 +25,7 @@ body{
     align-items: center; /*각 요소들을 중앙에 정렬 */
     border: 1px solid rgb(236,236,236);
     box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
-    z-index: 800;
+    z-index: 1;
 
 }
 #header_wrap{

@@ -1,0 +1,88 @@
+.SearchPage{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 3rem;
+    background-color: #f8f8f8;
+}
+.SearchValue{
+    border-bottom: 1px solid #e1e2e3;
+    margin: 0 auto;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.SearchValueBtn{
+    background-color: white;
+    border: 0px;
+}
+.SearchValueBtn h1{
+    font-size: 2.5rem;
+}
+.SearchResult{
+    width: 69.16%;
+    margin: 0 auto;
+}
+.SearchResultTag{
+    font-size: 1.5rem;
+}
+.SearchResultTag span{
+    font-weight: 400;
+}
+.SearchResultCompany{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 6.3rem;
+    width: 50%;
+    padding: 21px 20px
+}
+.SearchResultCompany img{
+    margin-right: 1.2rem;
+    width: 3.625rem;
+    height: 3.625rem;
+}
+.SearchResultCompanyHTag{
+    width: 60%;
+}
+.SearchResultCompanyHTag h5{
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+.SearchResultCompanyHTag h6{
+    margin:0;
+}
+.SearchResultCompanyBtn{
+    margin :0 auto;
+    border-radius: 1.563rem;
+    border: 1px solid rgb(225,226,227);
+    background-color: white;
+    color:rgb(51,102,255);
+    font-size:1rem;
+    font-weight: 700;
+    
+    padding: 0.5rem 1.5rem;
+
+    
+
+}
+.SearchResultPosiHtag{
+    font-size: 1.5rem;
+}
+.SearchResultPosiHtag span{
+    font-weight: 400;
+}
+.SearchResultCategoryBox{
+    display: flex;
+    width: 100%;
+}
+.SearchResultCategory{
+    display: flex;
+    width: 93%;
+}
+.SolidLine{
+    margin: 25px auto;
+    border : 1px red solid
+}

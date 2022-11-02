@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../../hunting_heading.css";
+import "../../huntingHeading.css";
 import "../../MainFirst.css";
 
 function MenuUL({ style }) {
