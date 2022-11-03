@@ -84,5 +84,15 @@
 }
 .SolidLine{
     margin: 25px auto;
-    border : 1px red solid
+    border:0px;
+    border-top : 1px #e1e2e3 solid
+}
+.SearchCategoryBtn{
+    display :flex;
+    margin-bottom: 1.563rem;
+}
+.SearchCategoryBtn button{
+    padding: 0.5rem 0.875rem;
+    margin-right: 0.8rem;
+    font-size: 13px;
 }

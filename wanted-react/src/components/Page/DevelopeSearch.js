@@ -2,6 +2,8 @@ import React from "react";
 import "../MainFirst.css";
 import "../Hunting_detail.css";
 import "../SearchPage.css";
+import "../Wanted_develop.css";
+import InfiniteImg from "../Module/Develope/InfiniteImg";
 
 import Header from "../Header";
 function DevelopeSearch() {
@@ -54,8 +56,22 @@ function DevelopeSearch() {
                 </div>
               </div>
               <hr className="SolidLine" />
+              <div className="SearchCategoryBtn">
+                <button>연봉이 최고의 복지</button>
+                <button>재택근무</button>
+                <button>퇴사율 10% 이하</button>
+                <button>급성장 중</button>
+                <button>병역특례</button>
+                <button>50인 이하</button>
+                <button>50인 이상</button>
+              </div>
             </div>
           </div>
+        </div>
+        <div>
+          <ul className="inImg">
+            <InfiniteImg />
+          </ul>
         </div>
       </div>
     </>

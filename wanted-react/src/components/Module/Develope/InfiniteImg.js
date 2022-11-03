@@ -1,10 +1,17 @@
 import WantedList from "../../datajson/DevelopeData/WantList.json";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 function InfiniteImg() {
+  const [newList, setNewList] = useState([]);
+
+  useEffect(() => {
+    setNewList(WantedList.WantLists.filter((infi) => infi.id === 1));
+  }, []);
+  console.log(newList);
+
   return (
     <>
-      {WantedList.WantLists.map((infi) => (
+      {newList.map((infi) => (
         <li key={infi.id}>
           <Link to={infi.linaddr}>
             <img src={infi.imgAdress} alt={infi.imgAlt} />
