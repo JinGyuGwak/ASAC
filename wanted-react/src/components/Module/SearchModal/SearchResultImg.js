@@ -1,10 +1,19 @@
 import WantedList from "../../datajson/DevelopeData/WantList.json";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-function InfiniteImg() {
+function SearchResultImg({ bringNumber, bringCompanyNumber }) {
+  const [newList, setNewList] = useState([]);
+
+  useEffect(() => {
+    setNewList(WantedList.WantLists.filter((infi) => infi.id === 1));
+  }, []);
+  bringNumber(newList.length);
+  bringCompanyNumber(newList.length);
+  console.log(newList);
+
   return (
     <>
-      {WantedList.WantLists.map((infi) => (
+      {newList.map((infi) => (
         <li key={infi.id}>
           <Link to={infi.linaddr}>
             <img src={infi.imgAdress} alt={infi.imgAlt} />
@@ -20,8 +29,7 @@ function InfiniteImg() {
           </div>
         </li>
       ))}
-      ;
     </>
   );
 }
-export default InfiniteImg;
+export default SearchResultImg;

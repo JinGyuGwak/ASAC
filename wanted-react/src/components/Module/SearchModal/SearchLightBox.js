@@ -8,12 +8,32 @@ function SearchLbox({ bring }) {
   const backClick = () => {
     bring();
   };
+  const [companySearch, setCompanySearch] = useState("");
+
+  const onChange = (e) => {
+    console.log(e);
+    setCompanySearch(e.target.value);
+    console.log(companySearch);
+  };
+
+  const enterPress = (e) => {
+    if (e.key === "Enter") {
+      window.location.href = "www.naver.com";
+    }
+  };
   return (
     <>
       <div className="searchContain">
         <div className="searchDiv">
-          <form>
-            <input type={"search"} placeholder={"#태그, 회사, 포지션 검색"} />
+          <form action="http://localhost:3000/3" method="GET">
+            <input
+              type={"search"}
+              placeholder={"#태그, 회사, 포지션 검색"}
+              value={companySearch}
+              onChange={onChange}
+              onKeyPress={enterPress}
+              name={companySearch}
+            />
           </form>
 
           <div className="searchBox">

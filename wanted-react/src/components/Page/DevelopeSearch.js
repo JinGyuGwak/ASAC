@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../MainFirst.css";
 import "../Hunting_detail.css";
 import "../SearchPage.css";
 import "../Wanted_develop.css";
-import InfiniteImg from "../Module/Develope/InfiniteImg";
+import SearchResultImg from "../Module/SearchModal/SearchResultImg";
 
 import Header from "../Header";
 function DevelopeSearch() {
+  const [positionNumber, setPositionNumber] = useState(0);
+  const [companyNumber, setCompanyNumber] = useState(0);
+  const bringCompanyNumber = (a) => {
+    setCompanyNumber(a);
+  };
+  const bringNumber = (number) => {
+    setPositionNumber(number);
+  };
   return (
     <>
       <Header />
@@ -18,7 +26,7 @@ function DevelopeSearch() {
         </div>
         <div className="SearchResult">
           <h2 className="SearchResultTag">
-            회사 <span>1</span>
+            회사 <span>{companyNumber}</span>
           </h2>
           <div className="SearchResultInfo">
             <a href="">
@@ -37,7 +45,7 @@ function DevelopeSearch() {
             </a>
             <div className="SearchResultPosi">
               <h2 className="SearchResultPosiHtag">
-                포지션 <span>14</span>
+                포지션 <span>{positionNumber}</span>
               </h2>
               <div className="SearchResultCategoryBox">
                 <div className="SearchResultCategory">
@@ -70,7 +78,10 @@ function DevelopeSearch() {
         </div>
         <div>
           <ul className="inImg">
-            <InfiniteImg />
+            <SearchResultImg
+              bringNumber={bringNumber}
+              bringCompanyNumber={bringCompanyNumber}
+            />
           </ul>
         </div>
       </div>
