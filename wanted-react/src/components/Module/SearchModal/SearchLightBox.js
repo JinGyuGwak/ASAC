@@ -1,10 +1,12 @@
 import "../../MainFirst.css";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import WantLists from "../../datajson/DevelopeData/WantList.json";
 
 function SearchLbox({ bring }) {
+  const navigate = useNavigate();
+
   const backClick = () => {
     bring();
   };
@@ -17,22 +19,23 @@ function SearchLbox({ bring }) {
   };
 
   const enterPress = (e) => {
-    if (e.key === "Enter") {
-      window.location.href = "www.naver.com";
+    if ((e.key === "Enter") & (companySearch.length > 0)) {
+      navigate("/3/" + companySearch);
+    } else if ((e.key === "Enter") & (companySearch.length === 0)) {
+      alert("키워드를 입력하세요");
     }
   };
   return (
     <>
       <div className="searchContain">
         <div className="searchDiv">
-          <form action="http://localhost:3000/3" method="GET">
+          <form>
             <input
               type={"search"}
               placeholder={"#태그, 회사, 포지션 검색"}
               value={companySearch}
               onChange={onChange}
               onKeyPress={enterPress}
-              name={companySearch}
             />
           </form>
 

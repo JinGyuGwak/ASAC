@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<MainFirst />} />
           <Route path="/1" element={<WantedDevelop />} />
           <Route path="/2" element={<HuntingDetail />} />
-          <Route path="/3" element={<DevelopeSearch />} />
+          <Route path="/3/:username" element={<DevelopeSearch />} />
         </Routes>
       </BrowserRouter>
     </>

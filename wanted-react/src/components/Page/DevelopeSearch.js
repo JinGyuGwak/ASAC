@@ -4,8 +4,9 @@ import "../Hunting_detail.css";
 import "../SearchPage.css";
 import "../Wanted_develop.css";
 import SearchResultImg from "../Module/SearchModal/SearchResultImg";
-
 import Header from "../Header";
+import { useParams } from "react-router-dom";
+
 function DevelopeSearch() {
   const [positionNumber, setPositionNumber] = useState(0);
   const [companyNumber, setCompanyNumber] = useState(0);
@@ -15,13 +16,16 @@ function DevelopeSearch() {
   const bringNumber = (number) => {
     setPositionNumber(number);
   };
+
+  const params = useParams();
+  const wantSearch = params.username;
   return (
     <>
       <Header />
       <div className="SearchPage">
         <div className="SearchValue">
           <button className="SearchValueBtn">
-            <h1>Google</h1>
+            <h1>{wantSearch}</h1>
           </button>
         </div>
         <div className="SearchResult">
@@ -36,7 +40,7 @@ function DevelopeSearch() {
                   alt="mdu"
                 />
                 <div className="SearchResultCompanyHTag">
-                  <h5>모두싸인</h5>
+                  <h5>{wantSearch}</h5>
                   <br />
                   <h6>IT, 컨텐츠</h6>
                 </div>
@@ -81,6 +85,7 @@ function DevelopeSearch() {
             <SearchResultImg
               bringNumber={bringNumber}
               bringCompanyNumber={bringCompanyNumber}
+              wantSearch={wantSearch}
             />
           </ul>
         </div>
