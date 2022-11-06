@@ -500,12 +500,14 @@ body{
     top:0;  /* 시작 위치 - 위쪽 끝 */
     left:0; /* 시작 위치 - 왼쪽 끝 */
     scrollbar-width: 0px;
-    display: none;
+    display: block;
+    z-index: 10;
 }
 .member_dao{
+    margin : 0 auto;
     border: 1px solid rgb(225, 226, 227);
     width: 25rem;
-    height: 80%;
+    height: 90%;
     overflow-y: scroll;
     background-color: white;
     position:absolute;  /* top, left에 의해 위치 지정 */
@@ -517,31 +519,29 @@ body{
 .member_dao::-webkit-scrollbar{
     display: none;
 }
-.dao_header{
+.dao_header{    
     margin: 1rem 0;
-    width: 90%;
+    width: 100%;
     display: flex;
     padding: 0px 20px;
-
+    text-align: center;
 }
 .dao_header button{
-    text-align: left;
-    width: 40%;
     background-color: white;
     border: 0px;
     font-weight: 600;
     font-size: 1.1rem;
-
 }
 .dao_header p{
     font-weight: 600;
     font-size: 1.1rem;
     width: 70%;
     margin: 0 auto;
+    margin-left: 1.9rem;
 }
 .mamberdaoForm{
     padding: 20px;
-    width: 90%;
+    width: 100%;
     
 }
 .formText{
@@ -550,7 +550,7 @@ body{
 }
 .memberdaoFormEmail{
     color: black;
-    width: 90%;
+    width: 100%;
     height: 3rem;
     min-height: 3rem;
     padding: 0px 12px;
@@ -568,7 +568,7 @@ body{
 
 }
 .memberdaoFormInput{
-    width: 90%;
+    width: 100%;
     height: 3rem;
     min-height: 3rem;
     padding: 0px 12px;
@@ -578,8 +578,13 @@ body{
     font-weight: 400;
     margin-bottom: 0.5rem;
 }
+.IamHr{
+    border:0px;
+    border-top: 1px solid rgb(225, 226, 227);
+    
+}
 .phoneSelect{    
-    width: 98%;
+    width: 100%;
     height: 3rem;
     min-height: 3rem;
     padding: 0px 12px;
@@ -590,7 +595,7 @@ body{
     margin-bottom: 0.5rem;
 }
 #phoneNum{
-    width: 50%;
+    width: 60%;
     height: 3rem;
     min-height: 3rem;
     padding: 0px 12px;
@@ -603,7 +608,7 @@ body{
 #phoneGet{
     background-color: rgb(242, 244, 247);
     color :rgb(204,204,204);
-    width: 36.5%;
+    width: 37%;
     height: 3rem;
     min-height: 3rem;
     border: 1px solid rgb(242, 244, 247);
@@ -611,6 +616,7 @@ body{
     font-size: 16px;
     font-weight: 400;
     margin: 0px 0px 10px 10px;
+    margin-left:3%;
     padding: 0 0.625rem;
 }
 #passwordP{

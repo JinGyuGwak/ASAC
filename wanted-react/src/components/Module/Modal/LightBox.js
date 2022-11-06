@@ -1,6 +1,7 @@
 import "../../MainFirst.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
+import LightBoxPage2 from "./LightBoxPage2";
 import {
   faFacebook,
   faApple,
@@ -9,8 +10,13 @@ import {
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 function LightBox({ showdao, bringData }) {
   const xClick = () => {
-    bringData(showdao);
+    bringData(0);
   };
+
+  const nextClick = () => {
+    bringData(2);
+  };
+
   return (
     <>
       <div id="lightbox">
@@ -44,7 +50,9 @@ function LightBox({ showdao, bringData }) {
             </div>
 
             <div>
-              <button id="email_submit_btn">📧이메일로 계속하기</button>
+              <button id="email_submit_btn" onClick={nextClick}>
+                📧이메일로 계속하기
+              </button>
               <div className="email_submit_text">
                 <div style={{ margin: "0.8em 0" }}>or</div>
                 <div style={{ marginBottom: "1em" }}>

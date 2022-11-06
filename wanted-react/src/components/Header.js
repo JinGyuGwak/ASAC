@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import MenuUL from "./Module/MainFirst/MenuUl";
 import LightBox from "./Module/Modal/LightBox";
+import LightBoxPage2 from "./Module/Modal/LightBoxPage2";
 import SearchLightBox from "./Module/SearchModal/SearchLightBox";
 
 function Header() {
@@ -20,9 +21,9 @@ function Header() {
   };
 
   const [showDao, setShowDao] = useState(false);
-  
+
   const bringData = (showDao) => {
-    setShowDao(!showDao);
+    setShowDao(showDao);
   };
 
   const [showSearch, setShowSearch] = useState(false);
@@ -38,6 +39,7 @@ function Header() {
       ) : (
         ""
       )}
+      {showDao === 2 ? <LightBoxPage2 bringData={bringData} /> : ""}
       {showDao === true ? (
         <LightBox bringData={bringData} showdao={showDao} />
       ) : (

@@ -6,6 +6,7 @@ import DevelopeSearch from "../src/components/Page/DevelopeSearch";
 import HuntingDetail from "../src/components/Page/HuntingDetail";
 import { Fragment } from "react";
 import ScrollToTop from "./ScrollToTop";
+import LightBoxPage2 from "./components/Module/Modal/LightBoxPage2";
 function App() {
   return (
     <>
