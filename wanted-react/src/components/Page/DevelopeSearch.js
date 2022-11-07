@@ -18,6 +18,7 @@ function DevelopeSearch() {
   };
 
   const params = useParams();
+  console.log(params);
   const wantSearch = params.username;
   return (
     <>

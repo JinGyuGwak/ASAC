@@ -27,7 +27,6 @@ function Header() {
   };
 
   const [showSearch, setShowSearch] = useState(false);
-
   const bringSearch = () => {
     setShowSearch(!showSearch);
   };

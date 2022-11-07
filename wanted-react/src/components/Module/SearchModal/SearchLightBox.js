@@ -5,8 +5,6 @@ import { useState } from "react";
 import WantLists from "../../datajson/DevelopeData/WantList.json";
 
 function SearchLbox({ bring }) {
-  const navigate = useNavigate();
-
   const backClick = () => {
     bring();
   };
@@ -17,7 +15,8 @@ function SearchLbox({ bring }) {
     setCompanySearch(e.target.value);
     console.log(companySearch);
   };
-
+  
+  const navigate = useNavigate();
   const enterPress = (e) => {
     if ((e.key === "Enter") & (companySearch.length > 0)) {
       navigate("/3/" + companySearch);

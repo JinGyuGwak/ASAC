@@ -9,6 +9,7 @@ function SearchResultImg({ wantSearch, bringNumber, bringCompanyNumber }) {
       WantedList.WantLists.filter((infi) => infi.companyName === wantSearch)
     );
   }, []);
+  
   bringNumber(newList.length);
   bringCompanyNumber(newList.length);
   console.log(newList);

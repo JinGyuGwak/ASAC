@@ -2,6 +2,7 @@ import { useState, useRef, useCallback } from "react";
 import TodoTemplate from "./components/TodoTemplate";
 import TodoInsert from "./components/TodoInsert";
 import TodoList from "./components/TodoList";
+import Login from "./login";
 const App = () => {
   const [todos, setTodos] = useState([
     //todos 는 배열 형태로 관리 됨
@@ -51,10 +52,11 @@ const App = () => {
     [todos]
   );
   return (
-    <TodoTemplate>
-      <TodoInsert onInsert={onInsert} />
-      <TodoList todos={todos} onRemove={onRemove} onToggle={onToggle} />
-    </TodoTemplate>
+    // <TodoTemplate>
+    //   <TodoInsert onInsert={onInsert} />
+    //   <TodoList todos={todos} onRemove={onRemove} onToggle={onToggle} />
+    // </TodoTemplate>
+    <Login.js />
   );
 };
 

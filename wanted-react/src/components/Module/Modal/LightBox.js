@@ -1,6 +1,6 @@
 import "../../MainFirst.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LightBoxPage2 from "./LightBoxPage2";
 import {
   faFacebook,
@@ -9,6 +9,31 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 function LightBox({ showdao, bringData }) {
+  const [email, setEmail] = useState("");
+
+  const [emailValid, setEmailValid] = useState(false);
+
+  const [notAllow, setNotAllow] = useState(true);
+
+  useEffect(() => {
+    if (emailValid) {
+      setNotAllow(false);
+      return;
+    }
+    setNotAllow(true);
+  }, [emailValid]);
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+    const regex =
+      /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+    if (regex.test(e.target.value)) {
+      setEmailValid(true);
+    } else {
+      setEmailValid(false);
+    }
+  };
+
   const xClick = () => {
     bringData(0);
   };
@@ -37,7 +62,7 @@ function LightBox({ showdao, bringData }) {
             </div>
           </header>
           <div className="mail_page">
-            <div style={{ paddingBottom: "14px" }}>
+            <div>
               <label id="mail_label">
                 이메일
                 <br />
@@ -46,16 +71,27 @@ function LightBox({ showdao, bringData }) {
                 type="email"
                 placeholder="이메일을 입력해 주세요."
                 id="email_text"
+                value={email}
+                onChange={handleEmail}
               />
+            </div>
+            <div className="errorMessageWrap">
+              {!emailValid && email.length > 0 && (
+                <div>올바른 이메일을 입력해주세요.</div>
+              )}
             </div>
 
             <div>
-              <button id="email_submit_btn" onClick={nextClick}>
+              <button
+                id="email_submit_btn"
+                onClick={nextClick}
+                disabled={notAllow}
+              >
                 📧이메일로 계속하기
               </button>
               <div className="email_submit_text">
                 <div style={{ margin: "0.8em 0" }}>or</div>
-                <div style={{ marginBottom: "1em" }}>
+                <div style={{ marginBottom: "1rem" }}>
                   다음 계정으로 계속하기
                 </div>
               </div>
