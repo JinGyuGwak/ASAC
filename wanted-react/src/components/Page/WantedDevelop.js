@@ -17,7 +17,7 @@ function WantedDevelop() {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY > 273) {
+    if (window.scrollY > 253) {
       setStyle({
         position: "fixed",
         marginTop: "-4.55rem",

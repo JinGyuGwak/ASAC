@@ -1,7 +1,45 @@
 import "../../MainFirst.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 function LightBoxPage2({ bringData }) {
+  const [Daoemail, setDaoEmail] = useState("");
+  const [DaoName, setDaoName] = useState("");
+  const [DaoPhone, setDaoPhone] = useState("");
+  const [DaoPhoneCheck, setDaoPhoneCheck] = useState("");
+  const [DaoPw, setDaoPw] = useState("");
+  const [DaoPwCheck, setDaoPwCheck] = useState("");
+  const [DaoBtn, setDaoBtn] = useState(false);
+
+  const [btnStyle, setBtnStyle] = useState({});
+  const [checkItems, setCheckItems] = useState([]);
+
+  useEffect(() => {
+    if (
+      DaoPwCheck === DaoPw &&
+      DaoPhoneCheck.length > 1 &&
+      DaoPhone.length > 1 &&
+      DaoName.length > 1 &&
+      Daoemail.length > 0 &&
+      checkItems.length > 2
+    ) {
+      setBtnStyle({ backgroundColor: "rgb(51,102,255)", color: "white" });
+    } else {
+      setBtnStyle({});
+    }
+  }, [
+    Daoemail,
+    DaoName,
+    DaoPhone,
+    DaoPhoneCheck,
+    DaoPw,
+    DaoPwCheck,
+    checkItems,
+  ]);
+
+  const handle = (e) => {
+    setDaoEmail(e.target.value);
+  };
+
   const backClick = () => {
     bringData(true);
   };
@@ -10,9 +48,7 @@ function LightBoxPage2({ bringData }) {
     { id: 1, title: "oneID 이용약관 동의 (필수)" },
     { id: 2, title: "개인정보 및 수집 이용 동의 (필수)" },
   ];
-  const [checkItems, setCheckItems] = useState([]);
 
-  // 체크박스 단일 선택
   const handleSingleCheck = (checked, id) => {
     if (checked) {
       // 단일 선택 시 체크된 아이템을 배열에 추가
@@ -53,15 +89,23 @@ function LightBoxPage2({ bringData }) {
                 placeholder="wlsrb2695@naver.com"
                 className="memberdaoFormEmail"
                 id="memberdaoForEmailValue"
+                value={Daoemail}
+                onChange={(e) => {
+                  setDaoEmail(e.target.value);
+                }}
               />
             </div>
 
             <div className="formText">이름</div>
             <div>
               <input
-                type="email"
+                type="text"
                 placeholder="이름을 입력해주세요."
                 className="memberdaoFormInput"
+                value={DaoName}
+                onChange={(e) => {
+                  setDaoName(e.target.value);
+                }}
               />
             </div>
 
@@ -98,6 +142,10 @@ function LightBoxPage2({ bringData }) {
                   type="text"
                   placeholder="(예시)01040228739."
                   id="phoneNum"
+                  value={DaoPhone}
+                  onChange={(e) => {
+                    setDaoPhone(e.target.value);
+                  }}
                 />
                 <button id="phoneGet">인증번호 받기</button>
               </div>
@@ -106,6 +154,10 @@ function LightBoxPage2({ bringData }) {
                   type="text"
                   placeholder="인증번호를 입력해주세요."
                   className="memberdaoFormEmail"
+                  value={DaoPhoneCheck}
+                  onChange={(e) => {
+                    setDaoPhoneCheck(e.target.value);
+                  }}
                 />
               </div>
             </div>
@@ -113,14 +165,22 @@ function LightBoxPage2({ bringData }) {
             <div className="formText">비밀번호</div>
 
             <input
-              type="text"
+              type="password"
               placeholder="비밀번호를 입력해주세요."
               className="memberdaoFormEmail"
+              value={DaoPw}
+              onChange={(e) => {
+                setDaoPw(e.target.value);
+              }}
             />
             <input
-              type="text"
+              type="password"
               placeholder="비밀번호를 다시 한번 입력해주세요."
               className="memberdaoFormEmail"
+              value={DaoPwCheck}
+              onChange={(e) => {
+                setDaoPwCheck(e.target.value);
+              }}
             />
             <p id="passwordP">
               영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자 이상
@@ -152,7 +212,9 @@ function LightBoxPage2({ bringData }) {
               </div>
             ))}
 
-            <button id="formSubmit">가입하기</button>
+            <button id="formSubmit" style={btnStyle}>
+              가입하기
+            </button>
           </form>
         </div>
       </div>

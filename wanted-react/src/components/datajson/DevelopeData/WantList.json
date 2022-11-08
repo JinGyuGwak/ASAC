@@ -5,7 +5,7 @@
         "imgAdress" : "../img/infini.webp",
         "imgAlt" : "회사이미지",
         "companyWant" : "서버/솔루션 유지보수",
-        "companyName" : "비주얼신",
+        "companyName" : "구글",
         "companyResponse" : "응답률 매우 높음",
         "companyLocation" : "서울·한국",
         "reward" : "채용보상금 1,000,000원"     
@@ -129,6 +129,61 @@
         "companyResponse" : "응답률 매우 높음",
         "companyLocation" : "서울·한국",
         "reward" : "채용보상금 1,000,000원"     
+    },
+    {"id" : 12 ,
+        "linaddr" : "/2",
+        "imgAdress" : "../img/2.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Windows Client(C# WPF) 개발",
+        "companyName" : "무신사",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000원" 
+    
+    },
+    {"id" : 13,
+        "linaddr" : "/2",
+        "imgAdress" : "../img/2.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Windows Client(C# WPF) 개발",
+        "companyName" : "무신사",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000원" 
+    
+    },
+    {"id" : 14 ,
+        "linaddr" : "/2",
+        "imgAdress" : "../img/2.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Windows Client(C# WPF) 개발",
+        "companyName" : "무신사",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000원" 
+    
+    },
+    {"id" : 15 ,
+        "linaddr" : "/2",
+        "imgAdress" : "../img/2.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Windows Client(C# WPF) 개발",
+        "companyName" : "무신사",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000원" 
+    
+    },
+    {"id" : 16 ,
+        "linaddr" : "/2",
+        "imgAdress" : "../img/2.webp",
+        "imgAlt" : "회사이미지",
+        "companyWant" : "Windows Client(C# WPF) 개발",
+        "companyName" : "무신사",
+        "companyResponse" : "응답률 매우 높음",
+        "companyLocation" : "서울·한국",
+        "reward" : "채용보상금 1,000,000원" 
+    
     }
     ]
     

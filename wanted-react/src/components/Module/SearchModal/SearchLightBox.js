@@ -11,11 +11,10 @@ function SearchLbox({ bring }) {
   const [companySearch, setCompanySearch] = useState("");
 
   const onChange = (e) => {
-    console.log(e);
     setCompanySearch(e.target.value);
     console.log(companySearch);
   };
-  
+
   const navigate = useNavigate();
   const enterPress = (e) => {
     if ((e.key === "Enter") & (companySearch.length > 0)) {
