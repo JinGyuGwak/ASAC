@@ -1183,9 +1183,9 @@ body{
 .BookMarkDivPTag{
     width: 70.5%;
     margin: 0 auto;
-    padding : 50px 0 20px;
+    padding : 3.125rem 0 1.25rem;
     font-weight: 700;
-    font-size: 1.25rem;    
+    font-size: 1.15rem;    
 }
 .BookMarkDivPTag p{
     margin: 0;
@@ -1210,4 +1210,16 @@ body{
     object-fit: cover;
     width: 100%;
     height: 11.719rem;
+}
+.infiImgLi{
+    position: relative;
+}
+
+.imgBookmark{
+    color:rgba(245, 0, 0, 0.526);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    z-index: 900;
 }
