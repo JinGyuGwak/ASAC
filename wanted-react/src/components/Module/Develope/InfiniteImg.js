@@ -1,13 +1,17 @@
 import WantedList from "../../datajson/DevelopeData/WantList.json";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Provider, useSelector, useDispatch } from "react-redux";
+import { createStore } from "redux";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
+
 function InfiniteImg() {
-  const ff = () => {
-    alert("눌렀당");
+  const ff = (a) => {
+    console.log(a);
+    alert("북마크 됨");
   };
   return (
     <>
@@ -20,7 +24,7 @@ function InfiniteImg() {
             <FontAwesomeIcon
               icon={faBookmark}
               className="imgBookmark"
-              onClick={ff}
+              onClick={() => ff(infi.markCheck)}
             />
           </div>
 

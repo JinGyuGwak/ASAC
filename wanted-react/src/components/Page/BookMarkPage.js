@@ -1,6 +1,6 @@
 import Header from "../Header";
 import "../MainFirst.css";
-import InfiniteImg from "../Module/Develope/InfiniteImg";
+import BookmarkModule from "../Module/Bookmark/BookmarkModule";
 
 function BookMarkPage() {
   return (
@@ -12,7 +12,7 @@ function BookMarkPage() {
         </div>
         <div>
           <ul className="inImg">
-            <InfiniteImg />
+            <BookmarkModule />
           </ul>
         </div>
       </div>
