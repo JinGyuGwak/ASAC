@@ -3,6 +3,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
+import { Provider, useSelector, useDispatch } from "react-redux";
+import { createStore } from "redux";
+import reducer from "../../reducer";
 function BookmarkModule() {
   const [newList, setNewList] = useState([]);
 
@@ -15,31 +18,35 @@ function BookmarkModule() {
     console.log(a);
   };
 
+  const store = createStore(reducer);
+
   return (
     <>
       {newList.length ? (
         newList.map((infi) => (
-          <li key={infi.id} className="infiImgLi">
-            <div>
-              <Link to={infi.linaddr}>
-                <img src={infi.imgAdress} alt={infi.imgAlt} />
-              </Link>
-              <FontAwesomeIcon
-                icon={faBookmark}
-                className="imgBookmark"
-                onClick={() => ff(infi.id)}
-              />
-            </div>
-            <div className="infiniText">
-              <div className="infiniText1">{infi.companyWant}</div>
-              <div className="infiniText2">{infi.companyName}</div>
+          <Provider store={store}>
+            <li key={infi.id} className="infiImgLi">
               <div>
-                <span className="infiniText3">{infi.companyResponse}</span>
+                <Link to={infi.linaddr}>
+                  <img src={infi.imgAdress} alt={infi.imgAlt} />
+                </Link>
+                <FontAwesomeIcon
+                  icon={faBookmark}
+                  className="imgBookmark"
+                  onClick={() => ff(infi.id)}
+                />
               </div>
-              <div className="infiniText4">{infi.companyLocation}</div>
-              <div className="infiniText5">{infi.reward}</div>
-            </div>
-          </li>
+              <div className="infiniText">
+                <div className="infiniText1">{infi.companyWant}</div>
+                <div className="infiniText2">{infi.companyName}</div>
+                <div>
+                  <span className="infiniText3">{infi.companyResponse}</span>
+                </div>
+                <div className="infiniText4">{infi.companyLocation}</div>
+                <div className="infiniText5">{infi.reward}</div>
+              </div>
+            </li>
+          </Provider>
         ))
       ) : (
         <p>북마크 된 포지션이 없어요</p>
