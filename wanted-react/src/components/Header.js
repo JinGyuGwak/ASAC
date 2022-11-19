@@ -63,7 +63,7 @@ function Header() {
               <Link to="/1">채용</Link>
             </li>
             <li>
-              <a href="">이벤트</a>
+              <Link to="/4">이벤트</Link>
             </li>
             <li>
               <a href="">직군별 연봉</a>

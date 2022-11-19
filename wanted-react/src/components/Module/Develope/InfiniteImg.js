@@ -1,21 +1,19 @@
 import WantedList from "../../datajson/DevelopeData/WantList.json";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { Provider, useSelector, useDispatch } from "react-redux";
-import { createStore } from "redux";
+import { useSelector, useDispatch } from "react-redux";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
-import reducer from "../../reducer";
+import { bookmarkclick } from "../../modules/counter";
 
 function InfiniteImg() {
+  const number = useSelector((state) => state.counter);
   const dispatch = useDispatch();
-  const number = useSelector((state) => state.number);
+
   const ff = (a) => {
-    console.log(a);
-    dispatch({ type: "CLICK" });
-    alert("북마크 됨");
+    dispatch(bookmarkclick(a));
+    console.log(number);
   };
 
   return (
@@ -29,7 +27,7 @@ function InfiniteImg() {
             <FontAwesomeIcon
               icon={faBookmark}
               className="imgBookmark"
-              onClick={() => ff(infi.markCheck)}
+              onClick={() => ff(infi.id)}
             />
           </div>
 
@@ -42,7 +40,6 @@ function InfiniteImg() {
             <div className="infiniText4">{infi.companyLocation}</div>
             <div className="infiniText5">{infi.reward}</div>
           </div>
-          <p>{number}</p>
         </li>
       ))}
     </>
