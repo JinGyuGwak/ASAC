@@ -140,7 +140,7 @@ function LightBoxPage2({ bringData }) {
               <div>
                 <input
                   type="text"
-                  placeholder="(예시)01040228739."
+                  placeholder="(예시)01012345678"
                   id="phoneNum"
                   value={DaoPhone}
                   onChange={(e) => {

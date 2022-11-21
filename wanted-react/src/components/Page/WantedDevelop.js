@@ -4,7 +4,6 @@ import Header from "../Header";
 import InfiniteImg from "../Module/Develope/InfiniteImg";
 import { useState, useEffect } from "react";
 import { Provider, useSelector, useDispatch } from "react-redux";
-import reducer from "../reducer";
 import { Link } from "react-router-dom";
 import ActiveRecru from "../Module/Develope/ActiveRecru";
 
@@ -81,9 +80,9 @@ function WantedDevelop() {
         </div>
         <div className="deve_main2">
           <div>
-            <a href="" id="devme_main2Tag">
+            <Link to="/4" id="devme_main2Tag">
               <i className="fa-solid fa-bookmark"></i> 북마크 모아보기 ▷
-            </a>
+            </Link>
           </div>
           <h3 id="devme_main2h">적극 채용 중인 회사</h3>
         </div>

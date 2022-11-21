@@ -3,20 +3,27 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
-import { Provider, useSelector, useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { bookmarkdown } from "../../modules/counter";
 
 function BookmarkModule() {
   const [newList, setNewList] = useState([]);
   const number = useSelector((state) => state.counter);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    setNewList(WantedList.WantLists.filter((infi) => infi.id === number[0]));
+    setNewList(
+      WantedList.WantLists.filter((infi) => {
+        for (let i = 0; i < number.length; i++) {
+          if (infi.id === number[i]) return number;
+        }
+      })
+    );
   }, []);
 
   console.log(newList);
   const ff = (a) => {
-    console.log(a);
-    console.log(number); //number에 id가 들어가 있다.
+    dispatch(bookmarkdown(a));
   };
 
   return (

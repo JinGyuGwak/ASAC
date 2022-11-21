@@ -12,6 +12,7 @@ function InfiniteImg() {
   const dispatch = useDispatch();
 
   const ff = (a) => {
+    alert("북마크됨");
     dispatch(bookmarkclick(a));
     console.log(number);
   };
