@@ -19,7 +19,7 @@ function BookmarkModule() {
         }
       })
     );
-  }, []);
+  }, [number]);
 
   console.log(newList);
   const ff = (a) => {

@@ -10,14 +10,9 @@ function counter(state = initialState, action) {
   switch (action.type) {
     case BOOKMARKCLICK:
       return (state = [...state, action.id]);
+
     case BOOKMARKDOWN:
-      return (
-        console.log("디스패치 :", action.id),
-        console.log(
-          "state :",
-          state
-        )((state = [state.filter((te) => te.id === action.id), action.id]))
-      );
+      return state.filter((te) => te !== action.id);
     default:
       return state;
   }
