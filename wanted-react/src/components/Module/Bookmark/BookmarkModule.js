@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import { useSelector, useDispatch } from "react-redux";
 import { bookmarkdown } from "../../modules/counter";
+import { FaBookmark } from "react-icons/fa";
 
 function BookmarkModule() {
   const [newList, setNewList] = useState([]);
@@ -35,11 +36,7 @@ function BookmarkModule() {
               <Link to={infi.linaddr}>
                 <img src={infi.imgAdress} alt={infi.imgAlt} />
               </Link>
-              <FontAwesomeIcon
-                icon={faBookmark}
-                className="imgBookmark"
-                onClick={() => ff(infi.id)}
-              />
+              <FaBookmark className="imgBookmark" onClick={() => ff(infi.id)} />
             </div>
             <div className="infiniText">
               <div className="infiniText1">{infi.companyWant}</div>

@@ -1,20 +1,24 @@
 import WantedList from "../../datajson/DevelopeData/WantList.json";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
-import { bookmarkclick } from "../../modules/counter";
+import { bookmarkclick, bookmarkdown } from "../../modules/counter";
+import { FaBookmark } from "react-icons/fa";
 
 function InfiniteImg() {
   const number = useSelector((state) => state.counter);
   const dispatch = useDispatch();
+  const [markCheck, setMarkCheck] = useState(false);
 
   const ff = (a) => {
-    alert("북마크됨");
     dispatch(bookmarkclick(a));
     console.log(number);
+  };
+  const tt = (a) => {
+    dispatch(bookmarkdown(a));
   };
 
   return (
@@ -25,11 +29,15 @@ function InfiniteImg() {
             <Link to={infi.linaddr}>
               <img src={infi.imgAdress} alt={infi.imgAlt} />
             </Link>
-            <FontAwesomeIcon
-              icon={faBookmark}
-              className="imgBookmark"
-              onClick={() => ff(infi.id)}
-            />
+            {number.includes(infi.id) ? (
+              <FaBookmark className="imgBookmark" onClick={() => tt(infi.id)} />
+            ) : (
+              <FontAwesomeIcon
+                icon={faBookmark}
+                className="imgBookmark"
+                onClick={() => ff(infi.id)}
+              />
+            )}
           </div>
 
           <div className="infiniText">

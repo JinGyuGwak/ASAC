@@ -3,6 +3,13 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+body {
+    -ms-overflow-x-style: none;
+}
+ 
+::-webkit-scrollbar {
+    display: none;
+}
 #menuBar{
     padding: 0;
 }
@@ -1216,7 +1223,7 @@ body{
 }
 
 .imgBookmark{
-    color:rgba(245, 0, 0, 0.526);
+    color: rgb(90, 70, 70);
     font-size: 1.5rem;
     position: absolute;
     top: 0.6rem;
