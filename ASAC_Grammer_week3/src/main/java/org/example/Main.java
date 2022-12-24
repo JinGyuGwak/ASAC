@@ -1,31 +1,24 @@
+import java.util.HashSet;
 import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a=sc.nextInt();
-        int b=sc.nextInt();
-        int c=b-45;
+        int N = sc.nextInt();
+        float[] record = new float[N];
+        float max = 0;
+        float avg = 0;
 
-        if(c<0){
-            if (a==0){
-                a=23;
-                c+=60;
-            }
-            else {
-                a-=1;
-                c+=60;
+        for(int i=0; i<N; i++) {
+            record[i] = sc.nextInt();
+            if(record[i]>max) {
+                max = record[i];
             }
         }
 
-
-
-
-
-
-        System.out.println(a + " " + c);
-
-
-
+        for(int j=0; j<N; j++) {
+            avg += (record[j]/max*100)/N;
+        }
+        System.out.println(avg);
     }
 }
