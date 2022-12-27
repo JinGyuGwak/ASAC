@@ -1,4 +1,5 @@
 .gradle
+README.md/
 build/
 logs/
 out/
