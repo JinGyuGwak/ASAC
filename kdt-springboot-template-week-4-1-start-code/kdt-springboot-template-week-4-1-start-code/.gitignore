@@ -1,6 +1,5 @@
 .gradle
-.md/
-.rej/
+README.md
 build/
 logs/
 out/
