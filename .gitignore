@@ -39,5 +39,5 @@ sketch
 
 # Intellij
 *.yml
-
+*.md
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,react
